@@ -1,0 +1,790 @@
+.account {
+  min-height: 100vh;
+}
+.account .account-inner {
+  padding-top: 175px;
+  padding-bottom: 175px;
+}
+.account .account-inner .account-tabs {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  border-bottom: 1px solid #d0d0d0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.account .account-inner .account-content .top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.account .account-inner .account-content .top h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+}
+.account .account-inner .account-content .top button {
+  padding: 0;
+}
+.account .account-inner .account-content .top .left {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.account .account-inner .account-content .top .left label {
+  position: relative;
+  height: 52px;
+}
+.account .account-inner .account-content .top .left label input {
+  height: 100%;
+}
+.account .account-inner .account-content .top .left label svg {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.account .account-inner .account-content .top .left span {
+  color: #ff0056;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.account .account-inner .account-content .top .export {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 153px;
+  height: 52px;
+}
+.account .account-inner .account-content .add-child-success {
+  min-height: 57vh;
+}
+.account .account-inner .account-content .add-child-success .alert-success {
+  max-width: 535px;
+  display: flex;
+  gap: 26px;
+  margin-top: 26px;
+}
+.account .account-inner .account-content .add-child-success .alert-success p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.account .account-inner .account-content .add-child-success .add-new {
+  margin-top: 26px;
+  width: 307px;
+  height: 52px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.account .account-inner .account-content .contract .contract-content > p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+.account .account-inner .account-content .contract .contract-content .contract-container {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding-top: 40px;
+}
+.account .account-inner .account-content .contract .contract-content .contract-container .contract-container-text {
+  overflow: auto;
+  max-height: 150px;
+  padding: 0 0 40px 40px;
+  scrollbar-width: thin;
+  scrollbar-color: #daebf5 #ffffff;
+  height: 100%;
+}
+.account .account-inner .account-content .contract .contract-content .contract-container .contract-container-text::-webkit-scrollbar {
+  width: 5px;
+}
+.account .account-inner .account-content .contract .contract-content .contract-container .contract-container-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  padding-right: 100px;
+}
+.account .account-inner .account-content .contract .contract-content .contract-container .contract-container-bottom {
+  padding-bottom: 52px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.account .account-inner .account-content .contract .contract-content .contract-container .contract-container-bottom label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.account .account-inner .account-content .contract .contract-content .contract-container .contract-container-bottom label p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.account .account-inner .account-content .contract .contract-content .contract-container .contract-container-bottom label p a {
+  color: var(--purple-color);
+  text-decoration: underline;
+}
+.account .account-inner .account-content .contract .contract-content .contract-container .contract-container-bottom .submit-btn {
+  width: 215px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.account .account-inner .account-content .contract .contract-content .btn-wrapper {
+  margin-top: 26px;
+}
+.account .account-inner .account-content .contract .contract-content .btn-wrapper button {
+  width: 192px;
+  height: 52px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.account .account-inner .account-content .search-list {
+  margin-top: 35px;
+}
+.account .account-inner .account-content .search-list table {
+  width: 100%;
+  border: 1px solid #e4e4ef;
+  border-radius: 12px;
+}
+.account .account-inner .account-content .search-list table tr {
+  display: grid;
+  grid-template-columns: 17% 21.54% 13.92% 17% 13.23% 17.5%;
+}
+.account .account-inner .account-content .search-list table tr th {
+  text-align: left;
+  padding: 18px 16px;
+  border: 1px solid #e4e4ef;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+.account .account-inner .account-content .search-list table tr th button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.account .account-inner .account-content .search-list table tr td {
+  text-align: left;
+  padding: 18px 16px;
+  border: 1px solid #e4e4ef;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.account .account-inner .account-content .search-list table tr td .tooltip-btn {
+  padding: 0;
+}
+.account .account-inner .account-content .search-list table tr td .tooltip-btn svg {
+  pointer-events: none;
+}
+.account .account-inner .account-content .search-list table tr td .tooltip {
+  position: absolute;
+  bottom: 66px;
+  right: 66px;
+}
+.account .account-inner .account-content .request-list {
+  margin-top: 35px;
+}
+.account .account-inner .account-content .request-list table {
+  width: 100%;
+  border: 1px solid #e4e4ef;
+  border-radius: 12px;
+}
+.account .account-inner .account-content .request-list table tr {
+  display: grid;
+  grid-template-columns: 6.85% 12.31% 16.31% 11.31% 11% 16.38% 10.92% 15%;
+}
+.account .account-inner .account-content .request-list table tr th {
+  text-align: left;
+  padding: 18px 16px;
+  border: 1px solid #e4e4ef;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+.account .account-inner .account-content .request-list table tr th button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+.account .account-inner .account-content .request-list table tr .name {
+  font-weight: 700;
+}
+.account .account-inner .account-content .request-list table tr td {
+  text-align: left;
+  padding: 18px 16px;
+  border: 1px solid #e4e4ef;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.account .account-inner .account-content .request-list table tr td .tooltip-btn {
+  padding: 0;
+}
+.account .account-inner .account-content .request-list table tr td .tooltip-btn svg {
+  pointer-events: none;
+}
+.account .account-inner .account-content .request-list table tr td .tooltip {
+  position: absolute;
+  bottom: 66px;
+  right: 66px;
+}
+.account .account-inner .account-content .verification-list {
+  margin-top: 35px;
+}
+.account .account-inner .account-content .verification-list table {
+  width: 100%;
+  border: 1px solid #e4e4ef;
+  border-radius: 12px;
+}
+.account .account-inner .account-content .verification-list table tr {
+  display: grid;
+  grid-template-columns: 17% 13.92% 17% 13.23% 21.54% 17.5%;
+}
+.account .account-inner .account-content .verification-list table tr th {
+  text-align: left;
+  padding: 18px 16px;
+  border: 1px solid #e4e4ef;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+.account .account-inner .account-content .verification-list table tr th button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.account .account-inner .account-content .verification-list table tr td {
+  text-align: left;
+  padding: 18px 16px;
+  border: 1px solid #e4e4ef;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.account .account-inner .account-content .verification-list table tr td .tooltip-btn {
+  padding: 0;
+}
+.account .account-inner .account-content .verification-list table tr td .tooltip-btn svg {
+  pointer-events: none;
+}
+.account .account-inner .account-content .verification-list table tr td .tooltip {
+  position: absolute;
+  bottom: 66px;
+  right: 66px;
+}
+.account .account-inner .account-content .consideration-info h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+}
+.account .account-inner .account-content .consideration-info p {
+  margin-bottom: 26px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-top: 26px;
+}
+.account .account-inner .account-content .consideration-info button {
+  width: 236px;
+  height: 52px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.account .account-inner .account-content .consideration-order {
+  margin-top: 35px;
+}
+.account .account-inner .account-content .consideration-order table {
+  width: 100%;
+  border: 1px solid #e4e4ef;
+  border-radius: 12px;
+  margin-bottom: 55px;
+}
+.account .account-inner .account-content .consideration-order table tr {
+  display: grid;
+  grid-template-columns: 17% 12.15% 16.46% 11.15% 15.08% 18.46% 9.8%;
+}
+.account .account-inner .account-content .consideration-order table tr th {
+  text-align: left;
+  padding: 18px 16px;
+  border: 1px solid #e4e4ef;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+.account .account-inner .account-content .consideration-order table tr th button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.account .account-inner .account-content .consideration-order table tr td {
+  text-align: left;
+  padding: 18px 16px;
+  border: 1px solid #e4e4ef;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.account .account-inner .account-content .consideration-order table tr td .column-row {
+  display: flex;
+  flex-direction: column;
+}
+.account .account-inner .account-content .consideration-order table tr td .column-row span {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.account .account-inner .account-content .consideration-order table tr td .column-row p {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+.account .account-inner .account-content .consideration-order table tr td .modification-modal-btn {
+  padding: 0;
+}
+.account .account-inner .account-content .consideration-order table tr td .modification-modal-btn svg {
+  pointer-events: none;
+}
+.account .account-inner .account-content .consideration-order table tr td .tooltip-btn {
+  padding: 0;
+}
+.account .account-inner .account-content .consideration-order table tr td .tooltip-btn svg {
+  pointer-events: none;
+}
+.account .account-inner .account-content .consideration-order table tr td .tooltip {
+  position: absolute;
+  bottom: 66px;
+  right: 66px;
+}
+.account .account-inner .account-content .representative-documents-content > p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 26px;
+}
+.account .account-inner .account-content .representative-documents-content > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 30px;
+}
+.account .account-inner .account-content .representative-documents-content > ul li {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.account .account-inner .account-content .representative-documents-content .representative-documents-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 26px;
+}
+.account .account-inner .account-content .representative-documents-content .representative-documents-list .representative-documents-item {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #f5f7fa;
+  position: relative;
+  cursor: pointer;
+}
+.account .account-inner .account-content .representative-documents-content .representative-documents-list .representative-documents-item p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.account .account-inner .account-content .representative-documents-content .representative-documents-list .representative-documents-item input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.account .account-inner .account-content .representative-documents-content .btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 26px;
+}
+.account .account-inner .account-content .representative-documents-content .btn-wrapper button {
+  width: 192px;
+  height: 52px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.account .account-inner .account-content .child-documents-content > p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 26px;
+}
+.account .account-inner .account-content .child-documents-content > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 30px;
+}
+.account .account-inner .account-content .child-documents-content > ul li {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 26px;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #f5f7fa;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  max-width: 413px;
+  padding: 27px 32px 40px;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item h4 {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 400;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 26px;
+  width: 100%;
+  flex: 1;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item ul li.success:before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/check.svg");
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item ul li.reject {
+  position: relative;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item ul li.reject:before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/reject.svg");
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item ul li p {
+  padding-left: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item ul li button {
+  padding: 0;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item ul li button svg {
+  pointer-events: none;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item .btn-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item .btn-wrapper button {
+  width: 236px;
+  height: 52px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 26px;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .child-documents-item input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.account .account-inner .account-content .child-documents-content .child-documents-list .add-btn {
+  width: 100%;
+  height: 52px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.account .account-inner .account-content .child-documents-content .btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 26px;
+}
+.account .account-inner .account-content .child-documents-content .btn-wrapper button {
+  width: 192px;
+  height: 52px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.account .account-inner .account-content .add-child form {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 414px;
+}
+.account .account-inner .account-content .add-child form .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.account .account-inner .account-content .add-child form .inputs textarea {
+  width: 100%;
+  max-width: 414px;
+  resize: none;
+  height: 120px;
+  font-family: "HelveticaNeue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.account .account-inner .account-content .add-child form .inputs textarea::-moz-placeholder {
+  font-family: "HelveticaNeue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.account .account-inner .account-content .add-child form .inputs textarea::placeholder {
+  font-family: "HelveticaNeue", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.account .account-inner .account-content .add-child form p span {
+  color: #ff0056;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.account .account-inner .account-content .add-child .btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.account .account-inner .account-content .add-child .btn-wrapper button {
+  width: 100%;
+  height: 52px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.account .account-inner .account-content .shift-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 27px;
+}
+.account .account-inner .account-content .shift-list .shift-item {
+  padding: 27px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  background: #f5f7fa;
+  border-radius: 12px;
+}
+.account .account-inner .account-content .shift-list .shift-item h5 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+}
+.account .account-inner .account-content .shift-list .shift-item p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+.account .account-inner .account-content .shift-list .shift-item span {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+.account .account-inner .account-content .shift-list .shift-item .button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-top: 20px;
+}
+.account .account-inner .account-content .shift-list .shift-item .button-wrapper button {
+  width: 280px;
+}
+.account .account-inner .account-content .shift-list .shift-item button {
+  width: 236px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0 5px;
+}
+.account .account-inner .account-content .order-list {
+  display: flex;
+  gap: 28px;
+  margin-top: 50px;
+}
+.account .account-inner .account-content .order-list .order-item {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.account .account-inner .account-content .order-list .order-item .image-wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 413px;
+  max-height: 230px;
+  position: relative;
+}
+.account .account-inner .account-content .order-list .order-item .image-wrapper .order-close {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 26px;
+  left: 18px;
+}
+.account .account-inner .account-content .order-list .order-item .image-wrapper .order-close p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.account .account-inner .account-content .order-list .order-item .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.account .account-inner .account-content .order-list .order-item .order-content {
+  background: var(--white-color);
+  padding: 30px 30px 40px;
+}
+.account .account-inner .account-content .order-list .order-item .order-content h5 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+.account .account-inner .account-content .order-list .order-item .order-content button {
+  margin-top: 20px;
+  width: 225px;
+  height: 52px;
+}/*# sourceMappingURL=account.component.css.map */

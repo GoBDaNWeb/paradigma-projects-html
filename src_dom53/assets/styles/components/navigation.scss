@@ -1,0 +1,34 @@
+.navigation {
+  display: flex;
+
+  .navigation__prev, .navigation__next {
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    transition: all .3s ease;
+    background: url("../img/circled-arrow-light.svg") no-repeat center / contain;
+
+    @include desktop-big {
+      width: 48px;
+      height: 48px;
+    }
+
+    &:hover {
+      background: url("../img/circled-arrow-light-hovered.svg") no-repeat center / contain;
+    }
+
+    &.swiper-button-disabled {
+      background: url("../img/circled-arrow-light-disabled.svg") no-repeat center / contain;
+      pointer-events: none;
+    }
+  }
+
+  .navigation__prev {
+    margin-right: 16px;
+    rotate: 180deg;
+
+    @include desktop-big {
+      margin-right: 32px;
+    }
+  }
+}

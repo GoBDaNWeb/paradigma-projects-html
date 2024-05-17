@@ -1,0 +1,276 @@
+@import "../../common/files/variables.scss";
+
+.services {
+  margin-top: 100px;
+  padding-bottom: 90px;
+  position: relative;
+  z-index: 2;
+  @media (max-width: $tab) {
+    margin-top: 80px;
+    padding-bottom: 60px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: var(--white-color);
+    border-radius: 0 0 25px 25px;
+    height: 25px;
+    bottom: -25px;
+  }
+  .services-inner {
+    overflow: hidden;
+    h3 {
+      text-align: center;
+      font-size: 64px;
+      font-weight: 300;
+      line-height: 100%; /* 64px */
+      letter-spacing: -2px;
+      color: var(--green-color);
+      @media (max-width: $tab) {
+        font-size: 40px;
+        line-height: 90%;
+      }
+    }
+    .content {
+      margin-top: 56px;
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      @media (max-width: $tab) {
+        gap: 80px;
+        margin-top: 30px;
+      }
+      .service-card.text-left {
+        .image-wrapper {
+          order: 1;
+
+          @media (max-width: $tab) {
+            order: 0;
+          }
+          img {
+            border-radius: 100px 0 0 0;
+            @media (max-width: $tab) {
+              border-radius: 0 80px 0 0;
+            }
+          }
+          .inner-img {
+            right: -50px;
+            left: auto;
+            img {
+              border-radius: 0 0 0 0;
+            }
+            @media (max-width: $tab) {
+              right: auto;
+              left: 0;
+            }
+          }
+        }
+        .service-card-content {
+          order: 0;
+          @media (max-width: $tab) {
+            order: 1;
+          }
+        }
+      }
+      .service-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 30px;
+        @media (max-width: $tab) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .image-wrapper {
+          position: relative;
+          padding-bottom: 60%;
+          width: 100%;
+
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0 100px 0 0;
+            z-index: 2;
+            @media (max-width: $tab) {
+              border-radius: 0 80px 0 0;
+              width: 90%;
+              right: 0;
+            }
+          }
+          .inner-img {
+            position: absolute;
+            z-index: 1;
+            left: -50px;
+            top: 0;
+            max-height: 450px;
+            height: 30vw;
+            width: 360px;
+            @media (max-width: $tab) {
+              left: 0;
+              max-height: auto;
+              height: auto;
+              width: 150px;
+              padding-bottom: 60%;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              position: absolute;
+              border-radius: 0 0 0 0;
+            }
+          }
+        }
+        .service-card-content {
+          h4 {
+            color: var(--green-color);
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; /* 48px */
+            letter-spacing: -1px;
+            @media (max-width: $tab) {
+              font-size: 32px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 90%; /* 28.8px */
+              letter-spacing: -1px;
+            }
+          }
+          .services-list {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            @media (max-width: $tab) {
+              margin-top: 20px;
+            }
+            @media (max-width: $tab-sm) {
+              grid-template-columns: repeat(1, 1fr);
+              gap: 10px;
+            }
+            .col {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+            }
+            button {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              background: none;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              &:hover {
+                .icon {
+                  background: var(--green-light-color);
+                  border-color: var(--green-light-color);
+                }
+              }
+              .icon {
+                border-radius: 999px;
+                height: 35px;
+                width: 35px;
+                border: 1px solid rgba(88, 108, 82, 0.2);
+                background: none;
+                outline: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: var(--trs-300);
+                @media (max-width: $tab) {
+                  height: 25px;
+                  width: 25px;
+                }
+                img {
+                  @media (max-width: $tab) {
+                    width: 9px;
+                    height: 11px;
+                  }
+                }
+              }
+              p {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%; /* 20px */
+                letter-spacing: -0.4px;
+                color: var(--green-color);
+                @media (max-width: $tab) {
+                  font-size: 18px;
+                  line-height: 100%;
+                  letter-spacing: -0.36px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .price {
+      margin-top: 100px;
+      background: var(--gray-color);
+      padding: 50px;
+      position: relative;
+      overflow: hidden;
+      background-image: url("../img/price.jpg");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      @media (max-width: $tab) {
+        background-image: url("../img/price-mob.jpg");
+        padding: 30px;
+      }
+      .price-content {
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+        z-index: 2;
+        position: relative;
+        @media (max-width: $tab) {
+          gap: 30px;
+        }
+        button {
+          display: flex;
+          align-items: center;
+          gap: 36px;
+          background: none;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          @media (max-width: $pre-mob) {
+            flex-direction: column;
+            gap: 25px;
+            align-items: flex-start;
+          }
+          p {
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; /* 48px */
+            letter-spacing: -1px;
+            color: var(--green-color);
+            @media (max-width: $tab) {
+              font-size: 32px;
+              line-height: 90%; /* 28.8px */
+              letter-spacing: -1px;
+            }
+          }
+        }
+        & > p {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%; /* 16.8px */
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          color: var(--green-color);
+        }
+      }
+    }
+  }
+}

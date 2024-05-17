@@ -1,0 +1,94 @@
+@import "../../common/files/variables.scss";
+
+.accordion-item.active {
+  button {
+    border-radius: 12px 12px 0 0;
+    p {
+      color: var(--green-color);
+    }
+    .icon {
+      transform: rotate(45deg);
+      &:after {
+        height: 0;
+      }
+      svg {
+        rect {
+          fill: var(--green-color);
+        }
+      }
+    }
+  }
+  .collapse {
+    padding-top: 0;
+    padding-bottom: 30px;
+    @media (max-width: $tab) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    p {
+    }
+  }
+}
+.accordion-item {
+  overflow: hidden;
+  transition: var(--trs-300);
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  button {
+    width: 100%;
+    padding: 0 0 28px;
+    height: fit-content;
+    transition: var(--trs-300);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    @media(max-width: $tab) {
+      padding: 0 0 20px;
+    }
+    p {
+      text-align: left;
+      color: var(--white-color);
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 36px;
+      pointer-events: none;
+      text-transform: uppercase;
+      transition: var(--trs-300);
+      padding-right: 20px;
+      @media (max-width: $tab) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+    .icon {
+      transition: var(--trs-300);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      svg {
+        rect {
+          transition: var(--trs-300);
+        }
+      }
+    }
+  }
+  .collapse {
+    border-radius: 0 0 12px 12px;
+    transition: var(--trs-300);
+    p {
+      transition: var(--trs-300);
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      @media (max-width: $tab) {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0 20px;
+      }
+    }
+  }
+}

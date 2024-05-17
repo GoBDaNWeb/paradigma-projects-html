@@ -1,0 +1,16 @@
+.auth {
+  background-image: url("../img/register-bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.auth .container {
+  height: 100%;
+}
+.auth .auth-inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=auth.component.css.map */

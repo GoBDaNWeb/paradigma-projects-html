@@ -1,0 +1,98 @@
+.selector.active {
+    button {
+      span {
+        transform: rotate(180deg);
+      }
+    }
+    .selector-content {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateY(0);
+    }
+  }
+  .selector {
+    min-width: 250px;
+    height: 100%;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 100%;
+    border-radius: var(--rounded-sm);
+    transition: all var(--trs-500);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 61px;
+    line-height: 150%;
+    box-sizing: border-box;
+    background: var(--gray-bg-color);
+    position: relative;
+    z-index: 1;
+  
+    .selector-btn {
+      padding: 0;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 3;
+      margin-top: 0;
+      gap: 20px;
+      color: #626262;
+      background: #f5f7fa;
+      padding: 15px 20px;
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      span {
+        transition: var(--trs-300);
+      }
+    }
+  
+    .selector-content {
+      z-index: 2;
+      position: absolute;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.05);
+      min-width: 100%;
+      opacity: 0;
+      transform: translateY(-20%);
+      pointer-events: none;
+      transition: var(--trs-300);
+      border: 2px solid #833a8a;
+      .selector-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          transition: var(--trs-300);
+          &:hover {
+            background: #833a8a;
+            span {
+              color: var(--white-color);
+            }
+          }
+          input {
+            display: none;
+          }
+          span {
+            color: #626262;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            padding: 11px 20px;
+            transition: var(--trs-300);
+          }
+        }
+      }
+    }
+  }
+  

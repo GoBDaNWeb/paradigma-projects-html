@@ -1,0 +1,321 @@
+.catalog__wrap {
+  max-width: initial;
+  gap: 24px;
+  row-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include desktop-big {
+    gap: 20px;
+  }
+
+  @include tablet {
+    gap: 24px 20px;
+    margin-bottom: 40px;
+  }
+
+  @include mobile {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc((100% - 24px*2)/3);
+  height: 31.05vw;
+  position: relative;
+  background: $gray_5;
+  flex-shrink: 0;
+
+  @include desktop-big {
+    width: calc((100% - 20px*2)/3);
+    height: 28.91vw;
+  }
+
+  @include desktop-min {
+    height: 34.87vw;
+  }
+
+  @include tablet {
+    width: calc((100% - 20px) / 2);
+    height: 40.24vw;
+  }
+
+  @include mobile {
+    width: 100%;
+    height: 82.4vw;
+  }
+
+  &:hover {
+    .card__dots {
+      opacity: 1;
+    }
+  }
+
+  .card__wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 62.7% 24px 21px;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop-big {
+      padding: 62.75% 32px 32px;
+    }
+
+    @include desktop-min {
+      padding: 76.39% 24px 21px;
+    }
+
+    @include tablet {
+      padding: 60% 24px 21px;
+    }
+  }
+
+  .card__tags {
+    position: absolute;
+    left: 24px;
+    top: 28px;
+    display: flex;
+    gap: 8px;
+    z-index: 1;
+
+    @include desktop-big {
+      left: 32px;
+    }
+
+    @include desktop-min {
+      top: 16px;
+      left: 16px;
+    }
+
+    @include tablet {
+      top: 21px;
+      left: 16px;
+    }
+  }
+
+  .card__tags-item {
+    font-size: 14px;
+    line-height: 18px;
+    color: $white;
+    padding: 7px 12px 8px;
+    border-radius: 50px;
+
+    @include desktop-big {
+      font-size: 16px;
+      line-height: 21px;
+    }
+
+    @include tablet {
+      padding: 6px 12px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    &.promo {
+      background: $promo;
+    }
+
+    &.hit {
+      background: $hit;
+    }
+  }
+
+  .card__favorites {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: 24px;
+    top: 24px;
+    background: rgba(26, 26, 26, 0.4);
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+
+    @include desktop-big {
+      width: 44px;
+      height: 44px;
+      right: 32px;
+    }
+
+    @include desktop-min {
+      top: 16px;
+      right: 16px;
+    }
+
+    @include tablet {
+      width: 38px;
+      height: 38px;
+      top: 16px;
+      right: 21px;
+    }
+
+    @include mobile {
+      right: 16px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: url("../img/heart-white-outlined.svg") no-repeat center / contain;
+      width: 22px;
+      height: 22px;
+      transition: .3s linear;
+
+      @include desktop-big {
+        width: 24px;
+        height: 24px;
+      }
+
+      @include tablet {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &:hover:after, &.active:after {
+      background: url("../img/heart-white-filled.svg") no-repeat center / contain;
+    }
+  }
+
+  .card__img {
+    height: 64.9%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @include desktop-big {
+      height: 63.42%;
+    }
+
+    @include desktop-min {
+      height: 58.81%;
+    }
+
+    @include tablet {
+      height: 63.42%;
+    }
+
+    img {
+      display: none;
+      object-fit: cover;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  .card__title {
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 3px;
+
+    @include desktop-big {
+      font-size: 46px;
+      line-height: 122%;
+    }
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 140%;
+    }
+  }
+
+  .card__size {
+    font-size: 16px;
+    line-height: 130%;
+
+    @include desktop-big {
+      font-size: 18px;
+      line-height: 140%;
+    }
+
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+
+  .card__price {
+    margin-top: auto;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+
+    @include desktop-big {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    @include tablet {
+      font-size: 22px;
+      line-height: 31px;
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 18px;
+      color: $gray_50;
+      position: relative;
+      margin-left: 15px;
+
+      @include desktop-big {
+        font-size: 16px;
+        line-height: 21px;
+      }
+
+      &:after {
+        position: absolute;
+        content: '';
+        background: #75758F;;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .card__dots {
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 10px;
+    width: calc(100% - 30px);
+    display: flex;
+    justify-content: space-between;
+    height: 4px;
+    gap: 5px;
+    opacity: 0;
+  }
+
+  .card__dots-item {
+    height: 100%;
+    background: $black;
+    opacity: 0.4;
+    flex-grow: 1;
+    transition: all .3s linear;
+  }
+
+  .card__dots-item.active {
+    opacity: 0.8;
+  }
+}

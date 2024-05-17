@@ -1,0 +1,49 @@
+@import "../../common/files/variables.scss";
+
+.auth-form {
+  background: var(--white-color);
+  padding: 40px;
+  max-width: 524px;
+  border-radius: 12px;
+  @media (max-width: $pre-mob) {
+    max-width: 100%;
+    border-radius: 0;
+    width: 100%;
+    margin-top: 75px;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 50px;
+    @media (max-width: $tab) {
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input:is([type="submit"]) {
+      width: 262px;
+      @media (max-width: $pre-mob) {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    a {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  & > a {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-decoration: underline;
+    margin-top: 48px;
+    display: block;
+  }
+}

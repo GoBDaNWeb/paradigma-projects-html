@@ -1,0 +1,217 @@
+@import "../../common/files/variables.scss";
+
+.header.active {
+  background: var(--dark-color);
+    
+}
+.header.menu-is-open {
+  background: var(--dark-color);
+  .info {
+    @media(max-width: $tab ) {
+
+      opacity: 0;
+    }
+  }
+}
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: var(--trs-300);
+  .header-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 10px 0;
+    .main {
+      display: flex;
+      align-items: center;
+      gap: 54px;
+      .logo {
+        width: 155px;
+        height: 62px;
+        @media(max-width: $tab) {
+          height: 35px;
+          width: 87px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .lang {
+        @media(max-width: $tab) {
+          display: none;
+        }
+        .lang-tab.active {
+          color: var(--white-color);
+        }
+        .lang-tab {
+          color: rgba(255, 255, 255, 0.2);
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 500;
+        }
+      }
+    }
+    .burger-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .burger.active {
+        span {
+          width: 0;
+        }
+        &:after {
+          transform: rotate(25deg);
+          top: 8px;
+        }
+        &:before {
+          transform: rotate(-25deg);
+          bottom: 8px;
+        }
+      }
+      .burger {
+        position: relative;
+        height: 17px;
+        width: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        &:hover {
+          span {
+            background: var(--green-color);
+          }
+          &:after {
+            background: var(--green-color);
+          }
+          &:before {
+            background: var(--green-color);
+          }
+        }
+        span {
+          width: 100%;
+          height: 1px;
+          background: var(--white-color);
+          top: 0;
+          transition: var(--trs-300);
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background: var(--white-color);
+          top: 0;
+          transition: var(--trs-300);
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background: var(--white-color);
+          bottom: 0;
+          transition: var(--trs-300);
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      transition: var(--trs-300);
+      justify-content: flex-end;
+      @media(max-width: $tab) {
+        align-items: baseline;
+        gap: 20px;
+      }
+      .tg {
+        @media(max-width: $tab) {
+          svg {
+            path {
+              fill: var(--sky-color);
+            }
+          }
+        }
+        &:hover {
+          p {
+            color: var(--sky-color);
+          }
+          svg {
+            path {
+              fill: var(--sky-color);
+            }
+          }
+        }
+      }
+      .wb {
+        @media(max-width: $tab) {
+          svg {
+            path {
+              fill: var(--green-dark-color);
+            }
+          }
+        }
+        &:hover {
+          p {
+            color: var(--green-dark-color);
+          }
+          svg {
+            path {
+              fill: var(--green-dark-color);
+            }
+          }
+        }
+      }
+      a {
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: var(--trs-300);
+        p {
+          transition: var(--trs-300);
+          font-size: 20px;
+          line-height: 24px;
+          font-weight: 500;
+          @media(max-width: $tab) {
+            display: none;
+          }
+        }
+        svg {
+          path {
+            transition: var(--trs-300);
+          }
+        }
+        &:hover {
+          p {
+            color: var(--green-color);
+          }
+          svg {
+            path {
+              fill: var(--green-color);
+            }
+          }
+        }
+      }
+      .phone {
+        p {
+          @media (max-width: $desktop-md-2) {
+            display: none;
+          }
+        }
+        .icon {
+          display: none;
+          @media (max-width: $desktop-md-2) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

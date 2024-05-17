@@ -1,0 +1,18 @@
+.fancybox__nav .f-button.is-prev::before {
+  z-index: 0;
+}
+
+.custom-fancy-next-btn {
+  background: url("../img/circled-arrow-light-white.svg") no-repeat center/contain;
+}
+.custom-fancy-next-btn:hover {
+  background: url("../img/circled-arrow-light-hovered.svg") no-repeat center/contain;
+}
+
+.custom-fancy-prev-btn {
+  background: url("../img/circled-arrow-light-white.svg") no-repeat center/contain;
+  transform: rotate(-180deg);
+}
+.custom-fancy-prev-btn:hover {
+  background: url("../img/circled-arrow-light-hovered.svg") no-repeat center/contain;
+}/*# sourceMappingURL=fancybox.css.map */

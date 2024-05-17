@@ -1,0 +1,39 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --green-color: #baf86b;
+  --purple-color: #946ce9;
+  --dark-color: #181617;
+  --dark2-color: #201c1e;
+  --red-color: #ff4342;
+  --sky-color: #50c0ff;
+  --green-dark-color: #8bd5a7;
+  --yellow-color: #fff04b;
+  --orange-color: #f65529;
+  --rose-color: #fcbcc4;
+  --sky2-color: #92b8cc;
+  --purple2-color: #ea97ff;
+
+  --trs-300: 300ms ease;
+  --trs-600: 600ms ease;
+  --trs-800: 800ms ease;
+
+  --gradient: linear-gradient(
+    90deg,
+    rgba(255, 175, 0, 1) 0%,
+    rgba(246, 24, 103, 1) 49%,
+    rgba(130, 58, 138, 1) 100%
+  );
+
+  --shadow: 0px 4px 30px 0px rgba(34, 60, 80, 0.25);
+}
+
+$desktop-xl: 2000px;
+$desktop-lg: 1920px;
+$desktop-md: 1440px;
+$desktop-md-2: 1400px;
+$desktop-sm: 1280px;
+$tab: 1024px;
+$tab-sm: 767px;
+$pre-mob: 630px;
+$mob: 500px;

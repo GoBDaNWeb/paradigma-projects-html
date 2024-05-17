@@ -1,0 +1,49 @@
+.btn {
+  background: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.btn.primary.white {
+  background: var(--white-color);
+  color: var(--green-color);
+  &:before {
+    background: var(--green-color);
+  }
+}
+.btn.primary {
+  background: var(--green-color);
+  border-radius: 40px;
+  backdrop-filter: blur(2px);
+  height: 40px;
+  padding: 0 20px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 500;
+  padding-left: 38px;
+  position: relative;
+  transition: var(--trs-300);
+  &:hover {
+    background: var(--green-light-color);
+    color: var(--green-color);
+    &:before {
+      background: var(--green-color);
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--white-color);
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: var(--trs-300);
+  }
+}

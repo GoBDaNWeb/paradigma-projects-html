@@ -1,0 +1,118 @@
+@import "../../common/files/variables.scss";
+
+.direction {
+  background-color: var(--yellow-color);
+  background-image: url("../img/direction/bg.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 8;
+  @media (max-width: $tab) {
+    background-image: url("../img/direction/bg-mob.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    background: url("../img/shapes/shape-direction.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: -55px;
+    width: 100%;
+    height: 60px;
+    @media (max-width: $tab-sm) {
+      background: url("../img/shapes/shape-direction-mob.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  .direction-wrapper {
+    overflow: hidden;
+  }
+  .direction-inner {
+    padding-top: 130px;
+    padding-bottom: 100px;
+    @media (max-width: $tab) {
+      padding-top: 303px;
+    }
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+      gap: 10px;
+      .pagination-bullet {
+        width: 15px;
+        height: 15px;
+        background: var(--white-color) !important;
+        opacity: 1;
+        border-radius: 999px;
+        cursor: pointer;
+      }
+      .pagination-bullet-active {
+        background: var(--purple-color) !important;
+      }
+    }
+    .top {
+      .direction-about {
+        max-width: 776px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        background: url("../img/direction/rectange.svg");
+        background-size: contain;
+        background-position: center;
+        padding: 36px 40px 50px 57px;
+        background-repeat: no-repeat;
+        @media (max-width: $pre-mob) {
+          background: none;
+          padding: 0;
+        }
+        .title-wrapper {
+          @media (max-width: $tab) {
+            padding: 60px 20px 30px 24px;
+          }
+          @media (max-width: $pre-mob) {
+            background: var(--white-color);
+            padding: 19px 20px 30px 24px;
+            border-radius: 20px;
+          }
+        }
+        h3 {
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 66px;
+          background-image: var(--gradient);
+          color: transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+          position: relative;
+          @media (max-width: $tab) {
+            font-size: 40px;
+            line-height: 44px;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 36px;
+          @media (max-width: $tab) {
+            font-size: 18px;
+            line-height: 25px;
+            padding-left: 30px;
+            padding-bottom: 40px;
+          }
+        }
+      }
+    }
+    .bottom {
+      margin-top: 233px;
+      @media (max-width: $tab) {
+        margin-top: 40px;
+      }
+    }
+  }
+}

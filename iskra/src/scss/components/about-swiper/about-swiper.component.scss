@@ -1,0 +1,106 @@
+@import "../../common/files/variables.scss";
+
+.about-swiper {
+  position: relative;
+  .swiper-about {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    @media (max-width: $tab) {
+      height: auto;
+    }
+    .swiper-wrapper {
+      align-items: center !important;
+      height: fit-content !important;
+    }
+    .swiper-pagination {
+      bottom: 0;
+      .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+      }
+      .swiper-pagination-bullet-active {
+        background: var(--purple-color) !important;
+      }
+    }
+  }
+  .navigation {
+    pointer-events: none;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    @media (max-width: $tab) {
+      display: none;
+    }
+    button {
+      pointer-events: all;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background: var(--yellow-color);
+    }
+  }
+  .pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: #dedede;
+    opacity: 1;
+    border-radius: 999px;
+    @media (max-width: $tab) {
+      width: 10px !important;
+      height: 10px !important;
+    }
+  }
+  .pagination-bullet-active {
+    background: var(--purple-color) !important;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 10px;
+  }
+  .swiper-slide {
+    transform: scale(0.8);
+    transition: var(--trs-300);
+    height: 100%;
+    @media (max-width: $tab) {
+      transform: scale(1);
+      height: calc(20vw * 1.5);
+    }
+    @media (max-width: $tab-sm) {
+      height: calc(20vw * 2.4);
+    }
+    .photo {
+      height: calc(25vw / 1.1);
+      width: 100%;
+      transition: var(--trs-300);
+      @media (max-width: $tab) {
+        height: 100%;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+  .swiper-slide-active {
+    transform: scale(1.2);
+    height: 100%;
+    @media (max-width: $tab) {
+      transform: scale(1);
+    }
+  }
+}

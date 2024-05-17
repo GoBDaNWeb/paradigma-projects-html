@@ -1,0 +1,40 @@
+<div class="data-change-modal">
+  <div class="data-change-modal-content">
+    <button class="close-btn">
+      <svg
+        width="17"
+        height="17"
+        viewBox="0 0 17 17"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.5472 1.25977L1.43555 15.6429"
+          stroke="#626262"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M1.43526 1.25977L15.5469 15.6429"
+          stroke="#626262"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <h5>Изменение данных</h5>
+    @@include('../theme-selector/theme-selector.component.html', {})
+    <textarea placeholder="Комментарий"></textarea>
+
+    <div class="btn-wrapper">
+      <button class="outline-purple file-btn">
+        Прикрепите документы
+        <input type="file" multiple class="file-input" />
+      </button>
+      <div class="documents-modal-list"></div>
+      <button class="purple">Отправить</button>
+    </div>
+  </div>
+</div>

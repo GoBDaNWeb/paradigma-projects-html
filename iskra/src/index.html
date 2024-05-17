@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/components/head/head.component.html', { 'title':'Искра', })
+  <body>
+    @@include('html/components/header/header.component.html', {})
+    @@include('html/components/mobile-menu/mobile-menu.component.html', {})
+    <main>
+      <ul
+        style="
+          margin-top: 150px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          margin-left: 20px;
+        "
+      >
+        <li>
+          <a href="home.html">Главная</a>
+        </li>
+        <li>
+          <a href="recreation-center.html">База Отдыха</a>
+        </li>
+        <li>
+          <a href="auth.html">Аутентификация</a>
+        </li>
+        <li>
+          <a href="register.html">Регистрация</a>
+        </li>
+        <li>
+          <a href="register-employee.html"
+            >Регистрация (формы для сотрудника)</a
+          >
+        </li>
+        <li>
+          <a href="register-not-employee.html"
+            >Регистрация (формы не для сотрудника)</a
+          >
+        </li>
+        <li>
+          <a href="corfim-register.html"
+            >Подтверждение регистрации кодом на почту</a
+          >
+        </li>
+        <li>
+          <a href="register-complite.html">Отрпавление заявку на регистрацию</a>
+        </li>
+        <!-- <li>
+          <a href="account.html">Личный кабинет(Бронирование)</a>
+        </li> -->
+        <li>
+          <a href="account-order-close.html"
+            >Личный кабинет(Бронирование закрыто)</a
+          >
+        </li>
+        <!-- <li>
+          <a href="account-choose-shift.html">Личный кабинет(выбор смены)</a>
+        </li> -->
+        <!-- <li>
+          <a href="account-choose-child.html"
+            >Личный кабинет(добавление ребенка в смену)</a
+          >
+        </li> -->
+        <!-- <li>
+          <a href="account-add-child.html"
+            >Личный кабинет(личные данные ребнка)</a
+          >
+        </li> -->
+        <!-- <li>
+          <a href="acount-add-documents-child.html"
+            >Личный кабинет(добавление документов ребнка младше 14 лет)</a
+          >
+        </li> -->
+        <li>
+          <a href="acount-add-documents-child-success.html"
+            >Личный кабинет(документы ребенка добавлены)</a
+          >
+        </li>
+        <!-- <li>
+          <a href="acount-add-documents-child-2.html"
+            >Личный кабинет(добавление документов ребнка старше 14 лет)</a
+          >
+        </li> -->
+        <li>
+          <a href="acount-add-documents-child-success-2.html"
+            >Личный кабинет(документы ребенка старше 14 лет добавлены )</a
+          >
+        </li>
+        <!-- <li>
+          <a href="verification.html"
+            >Личный кабинет(верификация сотрудников)</a
+          >
+        </li> -->
+        <!-- <li>
+          <a href="request.html">Личный кабинет(Обработка заявок)</a>
+        </li>
+        <li>
+          <a href="search-user.html">Личный кабинет(поиск пользователя)</a>
+        </li> -->
+        <li>
+          <a href="search-user-error.html"
+            >Личный кабинет(ошибка при поиске пользователя)</a
+          >
+        </li>
+        <!-- <li>
+          <a href="account-add-documents-representative.html"
+            >Личный кабинет(добавление документов родителя-сотрудника)</a
+          >
+        </li> -->
+        <!-- <li>
+          <a href="account-add-documents-representative-2.html"
+            >Личный кабинет(добавление документов родителя-несотрудника)</a
+          >
+        </li> -->
+        <li>
+          <a href="account-add-documents-representative-success.html"
+            >Личный кабинет( документы родителя добавлены)</a
+          >
+        </li>
+        <li>
+          <a href="with-notification.html">Личный кабинет(уведомления)</a>
+        </li>
+        <!-- <li>
+          <a href="account-add-documents-representative-success-2.html"
+            >Личный кабинет( документы родителя добавлены)</a
+          >
+        </li> -->
+        <li>
+          <a href="contract.html"
+            >Личный кабинет(Договор о добавлении ребенка)</a
+          >
+        </li>
+        <!-- <li>
+          <a href="add-child-success.html"
+            >Личный кабинет(уведомление об успешном добавлении ребенка)</a
+          >
+        </li> -->
+        <!-- <li>
+          <a href="child-documents.html">Личный кабинет(ребенок добавлен)</a>
+        </li> -->
+        <!-- <li>
+          <a href="child-documents-2.html"
+            >Личный кабинет(ребенку исполнилось 14 лет)</a
+          >
+        </li> -->
+        <!-- <li>
+          <a href="consideration-order.html"
+            >Личный кабинет(заявки на рассмотрении)</a
+          >
+        </li> -->
+        <!-- <li>
+          <a href="approved-order.html">Личный кабинет(заявка одобрена)</a>
+        </li> -->
+        <!-- <li>
+          <a href="modification-order.html"
+            >Личный кабинет(заявка в доработке)</a
+          >
+        </li> -->
+        <!-- <li>
+          <a href="reject-order.html">Личный кабинет(заявка отклонена)</a>
+        </li> -->
+        <!-- <li>
+          <a href="approved-pay-order.html"
+            >Личный кабинет(заявка одобрена и оплачена)</a
+          >
+        </li> -->
+        <!-- <li>
+          <a href="approved-all-order.html"
+            >Личный кабинет(в заявке всё готово)</a
+          >
+        </li> -->
+        <!-- <li>
+          <a href="empty-order.html">Личный кабинет(заявок нет)</a>
+        </li> -->
+        <!-- <li>
+          <a href="history.html">Личный кабинет(История)</a>
+        </li> -->
+        <!-- <li>
+          <a href="data.html">Личный кабинет(Данные)</a>
+        </li> -->
+        <li>
+          ---------------------------------------------------------------------
+          <h1>Полные версии</h1>
+        </li>
+        <li>
+          <a href="account-full.html"
+            >Личный кабинет(полная версия где ребенок до 14 лет)</a
+          >
+        </li>
+        <li>
+          <a href="account-full-2.html"
+            >Личный кабинет(полная версия где ребенку больше 14 лет)</a
+          >
+        </li>
+        <!-- <li>
+          <a href="account-full-3.html"
+            >Личный кабинет(полная версия где ребенку больше 14 лет и где
+            родитель не сотрудник)</a
+          >
+        </li>
+        <li>
+          <a href="account-full-4.html"
+            >Личный кабинет(полная версия где ребенку до 14 лет и где родитель
+            не сотрудник)</a
+          >
+        </li> -->
+        <li>
+          <a href="account-full-5.html"
+            >Личный кабинет(полная версия где текущая заявка одобрена)</a
+          >
+        </li>
+        <li>
+          <a href="account-full-6.html"
+            >Личный кабинет(полная версия где текущая заявка одобрена и
+            оплачена)</a
+          >
+        </li>
+        <li>
+          <a href="account-full-7.html"
+            >Личный кабинет(полная версия где текущая заявка отклонена)</a
+          >
+        </li>
+        <li>
+          <a href="account-full-8.html"
+            >Личный кабинет(полная версия где текущая заявка в доработке)</a
+          >
+        </li>
+        <li>
+          <a href="account-full-9.html"
+            >Личный кабинет(полная версия где в текущей заявке всё готово)</a
+          >
+        </li>
+        <li>
+          <a href="account-full-10.html"
+            >Личный кабинет(полная версия где текущих заявок нет)</a
+          >
+        </li>
+        <li>
+          <a href="account-full-11.html"
+            >Личный кабинет(полная версия где ребенок до 14 лет уже добавлен)</a
+          >
+        </li>
+        <li>
+          <a href="account-full-12.html"
+            >Личный кабинет(полная версия где ребенок старше 14 лет уже
+            добавлен)</a
+          >
+        </li>
+        <li>
+          <a href="verification-full.html"
+            >Личный кабинет(верификация полная версия)</a
+          >
+        </li>
+      </ul>
+    </main>
+    @@include('html/components/footer/footer.component.html', {})
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

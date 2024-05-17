@@ -1,0 +1,267 @@
+@import "../../common/files/variables.scss";
+
+.specialist-modal.active {
+  opacity: 1;
+  pointer-events: all;
+  .specialist-modal-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.specialist-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(233, 233, 233, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--trs-300);
+  opacity: 0;
+  pointer-events: none;
+  .specialist-modal-content {
+    margin: 0 20px;
+    max-width: 884px;
+    height: fit-content;
+    width: 100%;
+    background: var(--white-color);
+    padding: 50px 60px 60px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.55fr 1fr;
+    gap: 30px;
+    transition: var(--trs-300);
+    opacity: 0;
+    transform: translateY(-100%);
+    @media (max-width: $tab) {
+      grid-template-columns: 1fr;
+      overflow: auto;
+      height: 100%;
+      margin: 0;
+      padding: 30px 20px;
+    }
+    .close-btn {
+      position: absolute;
+      background: none;
+      outline: none;
+      border: none;
+      top: 30px;
+      right: 30px;
+      cursor: pointer;
+      @media (max-width: $tab) {
+        top: 20px;
+        right: 20px;
+      }
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @media (max-width: $tab) {
+        padding-right: 50px;
+      }
+      .image-wrapper {
+        padding-bottom: 150%;
+        position: relative;
+        border-radius: 100px 0 0 0;
+        overflow: hidden;
+        @media (max-width: $tab) {
+          padding-bottom: 100%;
+        }
+        @media (max-width: $pre-mob) {
+          padding-bottom: 130%;
+        }
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      button {
+        height: 55px;
+        &:before {
+          left: 70px;
+        }
+      }
+    }
+    .right {
+      h5 {
+        color: var(--green-color);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; /* 26.4px */
+        letter-spacing: -0.48px;
+        @media (max-width: $tab) {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%; /* 24px */
+          letter-spacing: -0.4px;
+        }
+      }
+      .info {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        p {
+          color: var(--green-color);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+          @media (max-width: $tab) {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+          }
+        }
+      }
+      .description {
+        margin-top: 50px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        color: var(--green-color);
+        @media (max-width: $tab) {
+          margin-top: 30px;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+        }
+      }
+      .education {
+        margin-top: 50px;
+        @media (max-width: $tab) {
+          margin-top: 30px;
+        }
+        h6 {
+          color: var(--green-color);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 100%; /* 20px */
+          letter-spacing: -0.4px;
+          @media (max-width: $tab) {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%; /* 18px */
+            letter-spacing: -0.36px;
+          }
+        }
+        ul {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          @media (max-width: $tab) {
+            margin-top: 15px;
+            gap: 15px;
+          }
+          li {
+            color: var(--green-color);
+            position: relative;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            padding-left: 22px;
+            list-style: none;
+            @media (max-width: $tab) {
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 140%;
+            }
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              top: 0;
+              margin: auto;
+              width: 8px;
+              height: 8px;
+              border-radius: 999px;
+              background: var(--green-color);
+            }
+          }
+        }
+      }
+      .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 50px;
+        @media (max-width: $tab) {
+          margin-top: 30px;
+        }
+        button {
+          background: none;
+          outline: none;
+          border: none;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          &:hover {
+            .arrow {
+              background: var(--green-light-color);
+              border-color: var(--green-light-color);
+            }
+          }
+          .arrow {
+            border-radius: 999px;
+            height: 35px;
+            width: 35px;
+            border: 1px solid rgba(88, 108, 82, 0.2);
+            background: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--trs-300);
+            @media (max-width: $tab) {
+              width: 45px;
+              height: 45px;
+            }
+            img {
+              width: 10px;
+              height: 11px;
+              @media (max-width: $tab) {
+                width: 17px;
+                height: 20px;
+              }
+            }
+          }
+          p {
+            color: var(--green-color);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%; /* 20px */
+            letter-spacing: -0.4px;
+            @media (max-width: $tab) {
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 100%; /* 18px */
+              letter-spacing: -0.36px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

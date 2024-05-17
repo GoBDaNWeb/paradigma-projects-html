@@ -1,0 +1,32 @@
+{
+  "scripts": {
+    "start": "webpack serve --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.4",
+    "file-loader": "^6.2.0",
+    "gsap": "^3.12.3",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.1",
+    "imask": "^7.6.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "save-dev": "^0.0.1-security",
+    "style-loader": "^3.3.3",
+    "swiper": "^11.0.5",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^4.15.0"
+  }
+}

@@ -1,0 +1,77 @@
+<div id="rest" class="rest">
+  <div class="rest-wrapper">
+    <div class="container">
+      <div class="rest-inner">
+        <div class="top">
+          <div class="left">
+            <h3>Активности</h3>
+            <p>
+              Благодаря большому разнообразию развлечений один день ребенка в
+              лагере никогда не похож на другой.
+            </p>
+            <Photo :img="img" />
+            <span>Распорядок дня</span>
+            <div class="file">
+              <svg
+                width="41"
+                height="51"
+                viewBox="0 0 41 51"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.25 1.75H6.25C4.99022 1.75 3.78204 2.25044 2.89124 3.14124C2.00044 4.03204 1.5 5.24022 1.5 6.5V44.5C1.5 45.7598 2.00044 46.968 2.89124 47.8588C3.78204 48.7496 4.99022 49.25 6.25 49.25H34.75C36.0098 49.25 37.218 48.7496 38.1088 47.8588C38.9996 46.968 39.5 45.7598 39.5 44.5V16L25.25 1.75Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M25.25 1.75V16H39.5"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M30 27.875H11"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M30 37.375H11"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.75 18.375H13.375H11"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <p>Вы можете ознакомиться с примером расписания</p>
+            </div>
+            <button class="primary"><p>Посмотреть</p></button>
+          </div>
+          <div class="right">
+            <div class="photo">
+              <div class="image-wrapper">
+                <img src="@img/rest/1.jpg" alt="photo" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          @@include('../rest-swiper/rest-swiper.component.html', {})
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

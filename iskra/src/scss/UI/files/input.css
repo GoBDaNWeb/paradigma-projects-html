@@ -1,0 +1,137 @@
+@charset "UTF-8";
+input:is([type=submit]).disable {
+  background: #dedede;
+  pointer-events: none;
+  color: rgba(98, 98, 98, 0.5);
+}
+
+input:is([type=submit]) {
+  height: 52px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  background: var(--purple-color);
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  color: var(--white-color);
+  transition: var(--trs-300);
+}
+input:is([type=submit]):hover {
+  background: #b865c0;
+}
+
+input:not([type=submit]) {
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  height: 60px;
+  width: 100%;
+  padding: 0 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 12px;
+  background: #f5f7fa;
+  transition: var(--trs-300);
+}
+input:not([type=submit]):hover {
+  border-color: var(--purple-color);
+}
+input:not([type=submit]):focus {
+  border-color: var(--purple-color);
+}
+input:not([type=submit]):focus::-moz-placeholder {
+  font-weight: 400;
+  color: #000;
+  font-size: 16px;
+  line-height: 22px;
+}
+input:not([type=submit]):focus::placeholder {
+  font-weight: 400;
+  color: #000;
+  font-size: 16px;
+  line-height: 22px;
+}
+input:not([type=submit])::-moz-placeholder {
+  opacity: 1;
+  font-weight: 400;
+  color: #626262;
+  font-size: 16px;
+  line-height: 22px;
+}
+input:not([type=submit])::placeholder {
+  opacity: 1;
+  font-weight: 400;
+  color: #626262;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+input:is([type=checkbox]) {
+  width: 20px;
+  height: 20px;
+}
+
+input:is([type=radio]) {
+  display: none;
+}
+
+textarea {
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  height: 60px;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: #f5f7fa;
+  transition: var(--trs-300);
+}
+textarea::-moz-placeholder {
+  opacity: 1;
+  font-weight: 400;
+  color: #626262;
+  font-size: 16px;
+  line-height: 22px;
+}
+textarea::placeholder {
+  opacity: 1;
+  font-weight: 400;
+  color: #626262;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.custom-radio > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom-radio > span {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio > span::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #626262;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-radio > input:checked + span::before {
+  background-image: url("../img/radio-circle.svg");
+}/*# sourceMappingURL=input.css.map */

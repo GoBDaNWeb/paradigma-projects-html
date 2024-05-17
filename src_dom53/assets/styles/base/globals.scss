@@ -1,0 +1,285 @@
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: $white;
+  font-family: $aeonik, $roboto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body * {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  color: $black;
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.switch-tab {
+  display: none;
+  transition: all 0.3s;
+}
+
+[data-fancybox] {
+  cursor: pointer;
+}
+
+h1,
+.section-title {
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 122%;
+
+  @include desktop-big {
+    font-size: 72px;
+    line-height: 111%;
+  }
+
+  @include desktop-min {
+    font-size: 43px;
+  }
+
+  @include tablet {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+
+  @include desktop-big {
+    font-size: 22px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 80px;
+
+  @include desktop-big {
+    padding: 0 100px;
+  }
+
+  @include desktop-min {
+    padding: 0 46px;
+  }
+
+  @include tablet {
+    padding: 0 34px;
+  }
+
+  @include mobile {
+    padding: 0 20px;
+  }
+}
+
+.button {
+  border-radius: 50px;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white;
+  border: none;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &.button-white {
+    .button {
+      &-original {
+        &-text {
+          color: #fff;
+        }
+        &-fill {
+          border-color: #fff;
+        }
+      }
+      &-duplicate {
+        &-text {
+          color: $black;
+        }
+        &-fill {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.button-original-fill,
+.button-original-text,
+.button-duplicate-fill,
+.button-duplicate-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.4s cubic-bezier(0.5, 0.75, 0, 1);
+  padding: 14px 20px;
+  border-radius: 50px;
+
+  @include desktop-big {
+    padding: 21.5px 52.5px;
+    font-size: 16px;
+  }
+}
+
+.button-original-fill {
+  transform: translateY(0%) scale(1);
+  background: $black;
+}
+
+.button-original-text {
+  color: $white;
+  position: relative;
+  transform: translateY(0%) scale(1);
+  top: inherit;
+  left: inherit;
+}
+
+.button-duplicate-fill {
+  background: $green;
+  transform: translateY(100%) scale(0.8);
+}
+
+.button-duplicate-text {
+  transform: translateY(100%) scale(0.8);
+  color: $white;
+  z-index: 1;
+}
+
+.button:hover,
+.button.active {
+  .button-original-fill {
+    transform: translateY(0) scale(0.8);
+    opacity: 0.5;
+  }
+
+  .button-original-text {
+    transform: translateY(-10%) scale(0.7);
+    opacity: 0.5;
+  }
+
+  .button-duplicate-fill {
+    transform: translateY(0%) scale(1);
+  }
+
+  .button-duplicate-text {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+}
+
+.button-outlined {
+  .button-original-fill {
+    background: transparent;
+    border: 1px solid $black;
+  }
+
+  .button-original-text {
+    color: $black;
+  }
+
+  .button-duplicate-fill {
+    background: $black;
+  }
+
+  .button-duplicate-text {
+    color: $white;
+  }
+}
+
+[data-aos="opacity-animation"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 1;
+  }
+}
+.fancybox__viewport {
+  width: 100vw;
+  height: 100vh;
+}
+.fancybox__container {
+  width: 100vw !important;
+}
+
+.page-title {
+  margin-bottom: 40px;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 120px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white;
+
+  @include desktop-big {
+    font-size: 120px;
+    line-height: 140px;
+  }
+
+  @include desktop-min {
+    font-size: 72px;
+    line-height: 1.2;
+  }
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  @include mobile {
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 0;
+  }
+}

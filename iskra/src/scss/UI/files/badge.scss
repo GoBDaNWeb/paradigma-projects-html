@@ -1,0 +1,105 @@
+@import "../../common/files/variables.scss";
+
+.badge {
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.badge.outline {
+  background: none;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.badge.primary {
+  background: rgb(255, 175, 0);
+  background: var(--gradient);
+  color: var(--white-color);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  border-radius: 51px;
+  @media (max-width: $tab) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.badge.warn {
+  border-radius: 15px;
+  background: #fff4e4;
+  color: #e99518;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: fit-content;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge.success {
+  border-radius: 15px;
+  background: rgba(0, 221, 141, 0.14);
+  color: #00dd8d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: fit-content;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge.error {
+  border-radius: 15px;
+  background: rgba(249, 50, 50, 0.15);
+  color: #f93232;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: fit-content;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge.approved {
+  border-radius: 15px;
+  background: #ededfe;
+  color: #833a8a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: fit-content;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge.modification {
+  border-radius: 15px;
+  background: #fffacb;
+  color: #af7f36;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: fit-content;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.badge.finish {
+  border-radius: 15px;
+  background: #dedede;
+  color: #a0a0a0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: fit-content;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

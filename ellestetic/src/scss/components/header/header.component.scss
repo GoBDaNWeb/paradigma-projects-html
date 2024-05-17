@@ -1,0 +1,128 @@
+@import "../../common/files/variables.scss";
+
+.header.active {
+  background: var(--white-color);
+  height: 90px;
+  box-shadow: var(--shadow);
+  @media (max-width: $tab) {
+    height: 60px;
+  }
+  .header-inner {
+    .top {
+      .logo {
+        align-items: center;
+
+        img {
+          width: 148px;
+          height: 70px;
+          @media (max-width: $tab) {
+            width: 95px;
+            height: 45px;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      opacity: 0;
+      pointer-events: all;
+    }
+  }
+}
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100px;
+  transition: var(--trs-300);
+  z-index: 100;
+  @media (max-width: $tab) {
+    height: 65px;
+  }
+  .header-inner {
+    height: 100%;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        p {
+          font-size: 16px;
+          line-height: 140%;
+          font-weight: 400;
+          color: var(--green-color);
+          @media (max-width: $tab) {
+            font-size: 13px;
+            line-height: 120%;
+            max-width: 75px;
+          }
+          &:nth-child(1) {
+            @media (max-width: $desktop-sm) {
+              display: none;
+            }
+          }
+        }
+      }
+      .logo {
+        display: flex;
+        align-items: flex-end;
+        transition: var(--trs-300);
+        @media (max-width: $tab) {
+          align-items: center;
+        }
+        img {
+          width: 170px;
+          height: 80px;
+          transition: var(--trs-300);
+          @media (max-width: $tab) {
+            width: 95px;
+            height: 45px;
+          }
+        }
+      }
+      .header-contacts {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        & > a {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 140%;
+          color: var(--green-color);
+          @media (max-width: $desktop-sm) {
+            display: none;
+          }
+        }
+        .socials {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+        button {
+          @media (max-width: $desktop-sm) {
+            display: none;
+          }
+        }
+      }
+    }
+    .bottom {
+      display: none;
+      justify-content: space-between;
+      transition: var(--trs-300);
+      gap: 10px;
+      @media (max-width: $desktop-sm) {
+        display: flex;
+      }
+      button {
+        height: 35px;
+        font-size: 13px;
+        line-height: 120%;
+      }
+    }
+  }
+}

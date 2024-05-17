@@ -1,0 +1,33 @@
+.tooltip.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.tooltip {
+  width: 390px;
+  background: var(--white-color);
+  padding: 50px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--trs-300);
+}
+.tooltip span {
+  color: #626262;
+  font-size: 16px;
+  line-height: 22px;
+}
+.tooltip h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+.tooltip p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}/*# sourceMappingURL=tooltip.component.css.map */

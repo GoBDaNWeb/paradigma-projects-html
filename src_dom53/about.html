@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>m53</title>
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity .3s linear;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="/" class="header__logo">
+            <img src="./assets/img/logo.svg" alt="">
+        </a>
+        <ul class="header__nav">
+            <li class="header__nav-item">
+                <a href="#">
+                    <div class="btn-original-text">О нас</div>
+                    <div class="btn-duplicate-text">О нас</div>
+                    <div class="btn-duplicate-fill"></div>
+                </a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#">
+                    <div class="btn-original-text">Проекты домов</div>
+                    <div class="btn-duplicate-text">Проекты домов</div>
+                    <div class="btn-duplicate-fill"></div>
+                </a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#">
+                    <div class="btn-original-text">Домики и бани</div>
+                    <div class="btn-duplicate-text">Домики и бани</div>
+                    <div class="btn-duplicate-fill"></div>
+                </a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#">
+                    <div class="btn-original-text">Контакты</div>
+                    <div class="btn-duplicate-text">Контакты</div>
+                    <div class="btn-duplicate-fill"></div>
+                </a>
+            </li>
+        </ul>
+        <div class="header__favorites">
+            <svg class="header__favorites-icon" width="83" height="70" viewBox="0 0 83 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.6432 3.83325C12.5842 3.83325 3.5 12.7974 3.5 23.905C3.5 36.3768 9.81945 42.4179 29.1648 57.6179L39.0154 65.2951C40.4272 66.3954 42.4061 66.3954 43.8179 65.2951L53.6685 57.6179C73.0139 42.4179 79.3333 36.3768 79.3333 23.905C79.3333 12.7974 70.2491 3.83325 59.1901 3.83325C52.344 3.83325 46.4196 6.9512 41.4167 13.1871C36.3084 6.9512 30.384 3.83325 23.6432 3.83325Z" stroke="#587B6B" stroke-width="6" stroke-linejoin="round"/>
+            </svg>
+            <div class="header__favorites-count">3</div>
+        </div>
+        <div class="header__contact">
+            <a href="tel:+79217879988">8 (921) 787 99 88</a>
+        </div>
+        <div id="header__menu-icon" class="header__menu-icon">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+	
+    <div class="modal modal__header-menu">
+        <div class="modal__wrap">
+            <div class="modal__header-menu-close">
+                <span></span>
+            </div>
+            <ul class="header__nav">
+                <li class="header__nav-item"><a href="#">О нас</a></li>
+                <li class="header__nav-item"><a href="#">Коттеджи</a></li>
+                <li class="header__nav-item"><a href="#">Дома и бани</a></li>
+                <li class="header__nav-item"><a href="#">Галерея</a></li>
+            </ul>
+            <div class="header__contact">
+                    <a href="tel:+79217879988">8 (921) 787 99 88</a>
+                    <a href="#">Вконтакте</a>
+                    <a href="#">Youtube</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+ 	<section class="team">
+        <div class="container">
+            <div class="team-top">
+                Люди, которые рассчитывают сметы и забивают гвозди с неподдельной любовью
+                <div class="team-arrow">
+                    <div class="team-prev">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="-0.5" y="0.5" width="37" height="37" rx="18.5" transform="matrix(-1 0 0 1 37 0)" stroke="#1A1A1A"/>
+                            <path d="M12.1586 18.4444L17.6586 12.9444C17.9654 12.6375 18.4629 12.6375 18.7697 12.9444C19.053 13.2276 19.0748 13.6733 18.8351 13.9815L18.7697 14.0555L14.6109 18.2142H25.2856C25.6885 18.2142 26.0206 18.5176 26.066 18.9083L26.0713 18.9999C26.0713 19.4029 25.768 19.735 25.3772 19.7804L25.2856 19.7857H14.6109L18.7697 23.9444C19.053 24.2276 19.0748 24.6733 18.8351 24.9815L18.7697 25.0555C18.4865 25.3388 18.0408 25.3606 17.7326 25.1209L17.6586 25.0555L12.1586 19.5555L12.0827 19.4677L12.0264 19.3803L11.9844 19.2917L11.9566 19.2089L11.9371 19.1166L11.9315 19.0701L11.9286 18.9849L11.9315 18.9298L11.9443 18.8422L11.9675 18.7547L12.002 18.6674L12.0431 18.5908L12.0956 18.5154C12.1152 18.4904 12.1362 18.4667 12.1586 18.4444L17.6586 12.9444L12.1586 18.4444Z" fill="#1A1A1A"/>
+                        </svg>                            
+                    </div>
+                    <!-- /.team-prev -->
+                    <div class="team-next">
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="37" height="37" rx="18.5" stroke="#1A1A1A"/>
+                            <path d="M25.8414 18.4444L20.3414 12.9444C20.0346 12.6375 19.5371 12.6375 19.2303 12.9444C18.947 13.2276 18.9252 13.6733 19.1649 13.9815L19.2303 14.0555L23.3891 18.2142H12.7144C12.3115 18.2142 11.9794 18.5176 11.934 18.9083L11.9287 18.9999C11.9287 19.4029 12.232 19.735 12.6228 19.7804L12.7144 19.7857H23.3891L19.2303 23.9444C18.947 24.2276 18.9252 24.6733 19.1649 24.9815L19.2303 25.0555C19.5135 25.3388 19.9592 25.3606 20.2674 25.1209L20.3414 25.0555L25.8414 19.5555L25.9173 19.4677L25.9736 19.3803L26.0156 19.2917L26.0434 19.2089L26.0629 19.1166L26.0685 19.0701L26.0714 18.9849L26.0685 18.9298L26.0557 18.8422L26.0325 18.7547L25.998 18.6674L25.9569 18.5908L25.9044 18.5154C25.8848 18.4904 25.8638 18.4667 25.8414 18.4444L20.3414 12.9444L25.8414 18.4444Z" fill="#1A1A1A"/>
+                        </svg>                            
+                    </div>
+                    <!-- /.team-next -->
+                </div>
+                <!-- /.team-arrow -->
+            </div>
+            <!-- /.team-top -->
+            <div class="team-slider">
+                <div class="team-slider-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide team-slide">
+                            <div class="team-img">
+                                <img src="./assets/img/home/team/1.png" alt="">
+                            </div>
+                            <!-- /.team-img -->
+                            <div class="team-info">
+                                <div class="team-name">
+                                    Семен Говоров
+                                </div>
+                                <!-- /.team-name -->
+                                <div class="team-ceo">
+                                    Архитектор
+                                </div>
+                                <!-- /.team-ceo -->
+                            </div>
+                            <!-- /.team-info -->
+                        </div>
+                        <!-- /.swiper-slide team-slide -->
+                        <div class="swiper-slide team-slide">
+                            <div class="team-img">
+                                <img src="/assets/img/home/team/2.png" alt="">
+                            </div>
+                            <!-- /.team-img -->
+                            <div class="team-info">
+                                <div class="team-name">
+                                    Евгений Полозов
+                                </div>
+                                <!-- /.team-name -->
+                                <div class="team-ceo">
+                                    Менеджер отдела продаж
+                                </div>
+                                <!-- /.team-ceo -->
+                            </div>
+                            <!-- /.team-info -->
+                        </div>
+                        <!-- /.swiper-slide team-slide -->
+                        <div class="swiper-slide team-slide">
+                            <div class="team-img">
+                                <img src="/assets/img/home/team/3.png" alt="">
+                            </div>
+                            <!-- /.team-img -->
+                            <div class="team-info">
+                                <div class="team-name">
+                                    Антон Смирнов
+                                </div>
+                                <!-- /.team-name -->
+                                <div class="team-ceo">
+                                    Основатель и директор компании
+                                </div>
+                                <!-- /.team-ceo -->
+                            </div>
+                            <!-- /.team-info -->
+                        </div>
+                        <!-- /.swiper-slide team-slide -->
+                    </div>
+                    <!-- /.swiper-wrapper -->
+                </div>
+                <!-- /.team-slider-container -->
+            </div>
+            <!-- /.team-slider -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.team -->
+
+
+	<section class="steps">
+        <div class="container">
+            <div class="steps-top">
+                <h2 class="page-title">
+                    7 шагов <br> к дому мечты
+                </h2>
+                <!-- /.page-title -->
+                <div class="button">
+                    <div class="button-original-fill"></div>
+                    <div class="button-original-text">хочу дом мечты</div>
+                    <div class="button-duplicate-fill"></div>
+                    <div class="button-duplicate-text">хочу дом мечты</div>
+                </div>
+                <!-- /.button -->
+            </div>
+            <!-- /.steps-top -->
+            <div class="steps-list">
+                <div class="steps-item">
+                    <div class="steps-title">
+                        1 шаг
+                        <span>
+                            Оставить заявку и ждать звонка
+                        </span>
+                    </div>
+                    <!-- /.steps-title -->
+                    <div class="steps-desc">
+                        После заявки мы связываемся с вами, помогаем выбрать или доработать проект и делаем бесплатный расчёт стоимости его реализации
+                    </div>
+                    <!-- /.steps-desc -->
+                </div>
+                <!-- /.steps-item -->
+                
+                <div class="steps-item">
+                    <div class="steps-title">
+                        2 шаг
+                        <span>
+                            Заключить договор и согласовать смету
+                        </span>
+                    </div>
+                    <!-- /.steps-title -->
+                    <div class="steps-desc">
+                        Заключаем договор, в котором подробно расписываем смету на строительство, этапы работы и сроки их сдачи. А также прописываем гарантийные обязательства и фиксируем конечную цену дома.
+                    </div>
+                    <!-- /.steps-desc -->
+                </div>
+                <!-- /.steps-item -->
+                
+                <div class="steps-item">
+                    <div class="steps-title">
+                        3 шаг
+                        <span>
+                            Взять пробы грунта и назначить дату начала
+                        </span>
+                    </div>
+                    <!-- /.steps-title -->
+                    <div class="steps-desc">
+                        На участок приезжает инженер, берет пробу грунта и осматривает подъездные пути. Далее назначаем дату заезда биргады
+                    </div>
+                    <!-- /.steps-desc -->
+                </div>
+                <!-- /.steps-item -->
+                
+                <div class="steps-item">
+                    <div class="steps-title">
+                        4 шаг
+                        <span>
+                            Запустить процесс строительства
+                        </span>
+                    </div>
+                    <!-- /.steps-title -->
+                    <div class="steps-desc">
+                        Мы готовим подъездные пути, устанавливаем бытовку для строителей. Строительная бригада закрепляется за вами на весь период стройки
+                    </div>
+                    <!-- /.steps-desc -->
+                </div>
+                <!-- /.steps-item -->
+                
+                <div class="steps-item">
+                    <div class="steps-title">
+                        5 шаг
+                        <span>
+                            Отслеживать процесс строительства
+                        </span>
+                    </div>
+                    <!-- /.steps-title -->
+                    <div class="steps-desc">
+                        Прораб курирует стройку, отвечает на все вопросы в общем чате и присылает вам ежедневные отчёты в мессенджер
+                    </div>
+                    <!-- /.steps-desc -->
+                </div>
+                <!-- /.steps-item -->
+                
+                <div class="steps-item">
+                    <div class="steps-title">
+                        6 шаг
+                        <span>
+                            Провести поэтапный прием работ
+                        </span>
+                    </div>
+                    <!-- /.steps-title -->
+                    <div class="steps-desc">
+                        Каждый готовый этап проекта вы принимаете с технадзором. Это возможно делать даже удалённо!
+                    </div>
+                    <!-- /.steps-desc -->
+                </div>
+                <!-- /.steps-item -->
+                
+                <div class="steps-item">
+                    <div class="steps-title">
+                        7 шаг
+                        <span>
+                            Заехать в новый дом своей мечты
+                        </span>
+                    </div>
+                    <!-- /.steps-title -->
+                    <div class="steps-desc">
+                        Вам остаётся только заехать в новый красивый дом и устроить шумное новоселье или спокойный семейный ужин
+                    </div>
+                    <!-- /.steps-desc -->
+                </div>
+                <!-- /.steps-item -->
+            </div>
+            <!-- /.steps-list -->
+            <div class="button steps-mob">
+                <div class="button-original-fill"></div>
+                <div class="button-original-text">хочу дом мечты</div>
+                <div class="button-duplicate-fill"></div>
+                <div class="button-duplicate-text">хочу дом мечты</div>
+            </div>
+            <!-- /.button -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.steps -->
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer>
+        <div class="footer__wrap">
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <div class="footer__contact-header">Офис</div>
+              <div class="footer__contact-text">
+                <p>
+                  Выставка «ExpoDom»,
+                  рядом с «МЕГА Дыбенко»,
+                  <br>
+                  дом № 24
+                </p>
+                <p>Ежедневно с 10:00 до 18:00</p>
+              </div>
+            </div>
+            <div class="footer__contact-item">
+              <div class="footer__contact-header">Контакты</div>
+              <div class="footer__contact-text">
+                <a href="tel:8 (993) 968-68-22">8 (993) 968-68-22</a>
+                <a href="tel:8 (993) 987-85-53">8 (993) 987-85-53</a>
+                <a href="mailto:zakaz@villas-dom.ru">zakaz@villas-dom.ru</a>
+              </div>
+            </div>
+          </div>
+          <ul class="footer__nav">
+            <li class="footer__nav-item"><a href="#">О нас</a></li>
+            <li class="footer__nav-item"><a href="#">Проекты домов</a></li>
+            <li class="footer__nav-item"><a href="#">Домики и бани</a></li>
+            <li class="footer__nav-item"><a href="#">Галерея</a></li>
+            <li class="footer__nav-item"><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__copy">
+          <span>&copy; m53 2023</span>
+          <a href="#">Конфиденциальность</a>
+          <a href="#">Пользовательское соглашение</a>
+        </div>
+      </footer>
+
+    <div class="modal" id="modal-call">
+        <div class="modal__wrap">
+            <div class="modal-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.89988 18.0999L18.0999 5.89993M18.0999 18.0999L5.8999 5.8999" stroke="#888888" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </div>
+            <!-- /.modal-close -->
+            <div class="section-title">
+                Оставьте свой телефон
+            </div>
+            <!-- /.section-title -->
+            <div class="modal-desc">
+                И мы свяжемся с вами для обсуждения самых выгодных предложений
+            </div>
+            <!-- /.modal-desc -->
+            <div class="contacts-form">
+                <form action="/" class="contacts__form">
+                    <div class="contacts__form-item contacts__form-item_name">
+                        <label for="name">Ваше имя</label>
+                        <input name="name" id="name" placeholder="Иванов Иван" type="text">
+                    </div>
+                    <div class="contacts__form-item contacts__form-item_phone">
+                        <label for="phone">Телефон</label>
+                        <input name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+7 (___) ___-__-__" type="tel">
+                    </div>
+                    <div class="contacts__form-button-wrap">
+                        <div class="button">
+                            <div class="button-original-fill"></div>
+                            <div class="button-original-text">Отправить</div>
+                            <div class="button-duplicate-fill"></div>
+                            <div class="button-duplicate-text">Отправить</div>
+                        </div>
+                    </div>
+                    <div class="contacts__form-checkbox">
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <p>Я согласен на обработку персональных данных</p>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <!-- /.contacts-form -->
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modal modal-success" id="modal-success">
+        <div class="modal__wrap">
+            <div class="modal-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.89988 18.0999L18.0999 5.89993M18.0999 18.0999L5.8999 5.8999" stroke="#888888" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </div>
+            <!-- /.modal-close -->
+            <div class="modal-icon modal__icon"></div>
+            <!-- /.modal-icon -->
+            <div class="modal__success-text">
+                Ваше данные улетели <br> к нам, ура!
+            </div>
+            <!-- /.modal__success-text -->
+        </div>
+        <!-- /.modal__wrap -->
+    </div>
+    <!-- /.modal modal-success -->
+
+    
+</body>
+</html>

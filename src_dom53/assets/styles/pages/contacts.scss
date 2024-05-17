@@ -1,0 +1,298 @@
+
+.contacts-wrapper {
+    padding-top: 56px;
+    position: relative;
+    margin-bottom: 80px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+
+    @include desktop-big {
+      padding-top: 62px;
+      margin-bottom: 80px;
+    }
+  
+    @include desktop-min {
+      padding-top: 57px;
+      margin-bottom: 90px;
+    }
+  
+    @include tablet {
+      margin-bottom: 72px;
+      padding-top: 50px;
+      flex-wrap: wrap;
+    }
+  
+    @include mobile {
+      padding-top: 42px;
+      margin-bottom: 71px;
+    }
+}
+
+.contacts-info {
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    
+    @include desktop-big {
+      font-size: 120px;
+      line-height: 140px;
+    }
+  
+    @include desktop-min {
+      line-height: 1.2;
+      font-size: 70px;
+    }
+  
+    @include tablet {
+      font-size: 60px;
+      line-height: 80px;
+    }
+  
+    @include mobile {
+      font-size: 46px;
+      line-height: 56px;
+      flex-direction: column;
+    }
+  
+    .contacts-info__title {
+      position: relative;
+      @include mobile {
+        margin-bottom: 17px;
+      }
+    }
+    .contacts-info__svg {
+        padding-top: 10px;
+        display: flex;
+        img {
+            @include tablet {
+                max-width: 80px;
+            }
+            @include mobile {
+                max-width: 60px;
+            }
+        }
+    }
+    .contacts-info__text {
+        max-width: 368px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+}
+
+.contacts-form {
+    width: 100%;
+    max-width: 555px;
+    @include tablet {
+        max-width: 100%;
+    }
+}
+
+.contacts__form {
+    @include mobile {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+        background-color: #fff;
+    }
+    textarea {
+        min-height: 142px;
+        min-width: 100%;
+        max-width: 100%;
+        @include tablet {
+            min-height: 100px;
+        }
+    }
+}
+
+.contacts__form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 39px;
+
+    @include desktop-big {
+      margin-bottom: 46px;
+    }
+
+    @include mobile {
+      margin-bottom: 31px;
+      height: inherit;
+    }
+}
+
+
+
+.contacts__form-item label {
+    font-size: 14px;
+    line-height: 130%;
+    color: $black;
+    padding-left: 7px;
+
+    @include desktop-big {
+      font-size: 18px;
+      line-height: 140%;
+      padding-left: 6px;
+    }
+
+    @include mobile {
+      padding-left: 6px;
+    }
+}
+
+.contacts__form-item input, .contacts__form-item textarea {
+    padding: 15px 15px 14px;
+    border: none;
+    border-bottom: 1px solid $gray_1;
+    outline: none;
+    font-size: 16px;
+    line-height: 130%;
+
+    @include desktop-big {
+      font-size: 18px;
+      line-height: 140%;
+      padding: 9px 16px 10px;
+    }
+}
+
+.contacts__form-item input::placeholder {
+    color: $gray_3;
+}
+
+.contacts__form-button-wrap {
+    margin: 48px 0 26px;
+    display: flex;
+    align-items: center;
+
+    @include desktop-big {
+        margin: 56px 0 27px;
+    }
+
+    @include mobile {
+        margin: auto 0 18px;
+    }
+
+    .button {
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 130%;
+        color: $black;
+        margin-left: 24px;
+
+        @include desktop-big {
+            font-size: 16px;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+}
+
+
+.contacts-bottom {
+    margin-bottom: 80px;
+    padding: 54px;
+    border-radius: 20px;
+    background-color: $green;
+    color: #fff;
+    @include tablet {
+        padding: 48px 24px;
+        margin-bottom: 56px;
+    }
+    &__title {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        @include tablet {
+            margin-bottom: 24px;
+        }
+    }
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        a {
+            width: 100%;
+            max-width: calc(50% - 2px);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+        }
+    }
+    .contacts {
+        &-map {
+            min-height: 635px;
+            @include tablet {
+                padding-top: 8px;
+                min-height: 400px;
+            }
+            @include mobile {
+                min-height: 400px;
+            }
+        }
+        &-list {
+            margin-bottom: 70px;
+            display: flex;
+            gap: 30px 64px;
+            @include tablet {
+                margin-bottom: 8px;
+                flex-wrap: wrap;
+                gap: 0px;
+            }
+        }
+        &-img {
+            width: 100%;
+            max-width: 245px;
+            @include desktop-big {
+                max-width: 328px;
+            }
+            @include tablet {
+                margin-bottom: 32px;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+        &-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+            max-width: 265px;
+            @include desktop-big {
+                &:last-child {
+                    max-width: 409px;
+                }
+            }
+            @include tablet {
+                margin-bottom: 24px;
+                gap: 0px;
+            }
+        }
+    }
+}

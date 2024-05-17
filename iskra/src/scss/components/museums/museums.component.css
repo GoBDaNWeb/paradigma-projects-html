@@ -1,0 +1,199 @@
+:root {
+  --yellow-color: #ffaf00;
+  --beige-color: #ffe7af;
+  --purple-color: #833a8a;
+  --lavand-color: #facbff;
+  --rose-color: #ff0056;
+  --light-rose-color: #ffcbd2;
+  --pink-color: #ff4281;
+  --black-color: #000;
+  --white-color: #fff;
+  --gray-color: #dedede;
+  --trs-300: 300ms ease;
+  --trs-600: 600ms ease;
+  --trs-800: 800ms ease;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(255, 175, 0, 1) 0%,
+    rgba(246, 24, 103, 1) 49%,
+    rgba(130, 58, 138, 1) 100%
+  );
+  --shadow: 0px 4px 30px 0px rgba(34, 60, 80, 0.25);
+}
+
+.museums {
+  position: relative;
+}
+.museums:after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/shapes/shape-education.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: -55px;
+  width: 100%;
+  height: 60px;
+}
+.museums .museums-inner {
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1024px) {
+  .museums .museums-inner {
+    padding-top: 0;
+  }
+}
+.museums .museums-inner .top h3 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 66px;
+}
+@media (max-width: 1024px) {
+  .museums .museums-inner .top h3 {
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 40px;
+  }
+}
+.museums .museums-inner .bottom {
+  display: flex;
+  gap: 30px;
+  margin-top: 48px;
+}
+@media (max-width: 1024px) {
+  .museums .museums-inner .bottom {
+    flex-direction: column;
+    gap: 76px;
+  }
+}
+.museums .museums-inner .bottom .museums-item {
+  width: calc(50% - 15px);
+}
+@media (max-width: 1024px) {
+  .museums .museums-inner .bottom .museums-item {
+    width: 100%;
+  }
+}
+.museums .museums-inner .bottom .museums-item .default-swiper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.museums .museums-inner .bottom .museums-item .default-swiper .content {
+  flex: 1 1;
+}
+.museums .museums-inner .bottom .museums-item .default-swiper .swiper-default {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+.museums .museums-inner .bottom .museums-item .default-swiper .swiper-default .swiper-slide .photo {
+  height: 100%;
+}
+.museums .museums-inner .bottom .museums-item .default-swiper .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.museums .museums-inner .bottom .museums-item .default-swiper .pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  background: var(--gray-color) !important;
+  opacity: 1;
+  display: block;
+}
+.museums .museums-inner .bottom .museums-item .default-swiper .pagination-bullet-active {
+  background: var(--purple-color) !important;
+}
+.museums .museums-inner .bottom .museums-item .default-swiper .swiper-wrapper {
+  max-height: 370px;
+  height: 100%;
+}
+@media (max-width: 1024px) {
+  .museums .museums-inner .bottom .museums-item .default-swiper .swiper-wrapper {
+    max-height: 100%;
+  }
+}
+.museums .museums-inner .bottom .museums-item .default-swiper .swiper-wrapper .navigation {
+  pointer-events: none;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+@media (max-width: 1024px) {
+  .museums .museums-inner .bottom .museums-item .default-swiper .swiper-wrapper .navigation {
+    display: none;
+  }
+}
+.museums .museums-inner .bottom .museums-item .default-swiper .swiper-wrapper .navigation button {
+  pointer-events: all;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: var(--white-color);
+}
+.museums .museums-inner .bottom .museums-item .default-swiper .swiper-wrapper .navigation button svg {
+  stroke: var(--purple-color);
+}
+.museums .museums-inner .bottom .museums-item .default-swiper h5 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+}
+@media (max-width: 1024px) {
+  .museums .museums-inner .bottom .museums-item .default-swiper h5 {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+.museums .museums-inner .bottom .museums-item .default-swiper p {
+  margin-top: 18px;
+  margin-bottom: 45px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  max-width: 605px;
+}
+@media (max-width: 1024px) {
+  .museums .museums-inner .bottom .museums-item .default-swiper p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+.museums .museums-inner .bottom .museums-item .default-swiper .badges {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 22px;
+  margin-top: 20px;
+}
+.museums .museums-inner .bottom .museums-item .default-swiper .badges .badge {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  height: 45px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .museums .museums-inner .bottom .museums-item .default-swiper .badges .badge {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}/*# sourceMappingURL=museums.component.css.map */

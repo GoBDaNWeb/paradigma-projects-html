@@ -1,0 +1,149 @@
+@import "../../common/files/variables.scss";
+
+.stocks {
+  margin-top: 106px;
+  padding-bottom: 110px;
+  border-bottom: 1px solid var(--green-light-color);
+  @media (max-width: $tab) {
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+  .stocks-inner {
+    display: grid;
+    grid-template-areas: "title title" "nav nav" "swiper swiper";
+    position: relative;
+    @media (max-width: $tab) {
+      grid-template-areas: "title title" "swiper swiper" "nav nav";
+    }
+    .top {
+      position: relative;
+      grid-area: title;
+      h3 {
+        text-align: center;
+        font-size: 64px;
+        font-weight: 300;
+        line-height: 100%; /* 64px */
+        letter-spacing: -2px;
+        color: var(--green-color);
+        @media (max-width: $tab) {
+          font-size: 40px;
+          line-height: 90%;
+        }
+      }
+    }
+    .navigation {
+      position: absolute;
+      right: 0;
+      grid-area: nav;
+      bottom: -15px;
+      @media (max-width: $tab) {
+        margin: auto;
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+    .stocks-swiper {
+      margin-top: 50px;
+      overflow: hidden;
+      grid-area: swiper;
+
+      @media (max-width: $tab) {
+        margin-top: 30px;
+      }
+      .swiper-slide {
+        .image-wrapper {
+          position: relative;
+          padding-bottom: 75%;
+          border-radius: 100px 0 0 0;
+          overflow: hidden;
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .badge {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            height: 35px;
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            img {
+              position: relative;
+              width: 15px;
+              height: 15px;
+            }
+            @media (max-width: $tab) {
+              top: 10px;
+              right: 10px;
+              height: 30px;
+              font-size: 15px;
+            }
+          }
+        }
+        .content {
+          margin-top: 30px;
+          @media (max-width: $tab) {
+            margin-top: 20px;
+          }
+          h4 {
+            color: var(--green-color);
+            text-align: center;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 100%; /* 28px */
+            letter-spacing: -0.56px;
+            @media (max-width: $tab) {
+              font-size: 20px;
+              letter-spacing: -0.4px;
+            }
+          }
+          .separator {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            gap: 10px;
+            @media (max-width: $tab) {
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
+            &:before {
+              content: "";
+              width: 30px;
+              height: 1px;
+              background: var(--green-color);
+              top: 0;
+              bottom: 0;
+              margin: auto 0;
+            }
+            &:after {
+              content: "";
+              width: 30px;
+              height: 1px;
+              background: var(--green-color);
+              top: 0;
+              bottom: 0;
+              margin: auto 0;
+            }
+          }
+          p {
+            color: var(--green-color);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            text-align: center;
+            @media (max-width: $tab) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

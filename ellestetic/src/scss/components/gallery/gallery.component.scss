@@ -1,0 +1,101 @@
+@import "../../common/files/variables.scss";
+
+.gallery {
+  background-image: url("../img/gallery-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-radius: 0 0 25px 25px;
+  position: relative;
+  overflow: hidden;
+  @media (max-width: $tab) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .gallery-inner {
+    display: grid;
+    grid-template-areas: "title title" "nav nav" "swiper swiper";
+    position: relative;
+    @media (max-width: $tab) {
+      grid-template-areas: "title title" "swiper swiper" "nav nav";
+    }
+    .top {
+      position: relative;
+      grid-area: title;
+
+      h3 {
+        text-align: center;
+        font-size: 64px;
+        font-weight: 300;
+        line-height: 100%; /* 64px */
+        letter-spacing: -2px;
+        color: var(--green-color);
+        @media (max-width: $tab) {
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 90%; /* 36px */
+          letter-spacing: -2px;
+        }
+      }
+    }
+    .navigation {
+      position: absolute;
+      right: 0;
+      bottom: -15px;
+      grid-area: nav;
+      @media (max-width: $tab) {
+        margin: auto;
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+    .gallery-swiper {
+      margin-top: 50px;
+      grid-area: swiper;
+      max-width: 70vw;
+      @media (max-width: $tab) {
+        margin-top: 37px;
+        max-width: 100%;
+        overflow: hidden;
+      }
+      .swiper-slide-prev,
+      .swiper-slide-next {
+        .image-wrapper {
+          padding-bottom: 90% !important;
+          @media (max-width: $tab) {
+            padding-bottom: 75% !important;
+          }
+        }
+      }
+      .swiper-slide-prev {
+        .image-wrapper {
+          padding-bottom: 90% !important;
+          @media (max-width: $tab) {
+            padding-bottom: 75% !important;
+          }
+        }
+      }
+
+      .swiper-slide {
+        .image-wrapper {
+          padding-bottom: 100%;
+          position: relative;
+          transition: var(--trs-300);
+          @media (max-width: $tab) {
+            padding-bottom: 75%;
+          }
+          img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+:root {
+  --yellow-color: #ffaf00;
+  --beige-color: #ffe7af;
+  --purple-color: #833a8a;
+  --lavand-color: #facbff;
+  --rose-color: #ff0056;
+  --light-rose-color: #ffcbd2;
+  --pink-color: #ff4281;
+  --black-color: #000;
+  --white-color: #fff;
+  --gray-color: #dedede;
+  --trs-300: 300ms ease;
+  --trs-600: 600ms ease;
+  --trs-800: 800ms ease;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(255, 175, 0, 1) 0%,
+    rgba(246, 24, 103, 1) 49%,
+    rgba(130, 58, 138, 1) 100%
+  );
+  --shadow: 0px 4px 30px 0px rgba(34, 60, 80, 0.25);
+}
+
+.partners {
+  position: relative;
+  padding-top: 140px;
+  z-index: 3;
+  background: var(--beige-color);
+}
+.partners:after {
+  content: "";
+  position: absolute;
+  background: url("../img/shapes/shape-partners.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: -55px;
+  width: 100%;
+  height: 60px;
+}
+@media (max-width: 767px) {
+  .partners:after {
+    background: url("../img/shapes/shape-partners-mob.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+.partners .partners-inner {
+  padding-bottom: 90px;
+}
+.partners .partners-inner .top h3 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 66px;
+  margin-bottom: 42px;
+}
+@media (max-width: 1024px) {
+  .partners .partners-inner .top h3 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.partners .partners-inner .bottom {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 1024px) {
+  .partners .partners-inner .bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.partners .partners-inner .bottom .partner-item {
+  background: var(--white-color);
+  border-radius: 12px;
+  width: 100%;
+  padding: 46px 187px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .partners .partners-inner .bottom .partner-item {
+    padding: 30px 96px;
+  }
+}
+.partners .partners-inner .bottom .partner-item .image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.partners .partners-inner .bottom .partner-item .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=partners.component.css.map */

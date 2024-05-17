@@ -1,0 +1,305 @@
+@import "../../common/files/variables.scss";
+
+.hero {
+  padding-top: 106px;
+  min-height: 100vh;
+  @media (max-width: $desktop-sm) {
+    padding-top: 74px;
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 3;
+    background: var(--purple-color);
+    padding-top: 80px;
+    padding-bottom: 100px;
+    &:before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/shapes/shape-hero1.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      top: -44px;
+      width: 100%;
+      height: 60px;
+      @media (max-width: 1440px) {
+        top: -30px;
+      }
+      @media (max-width: 992px) {
+        top: -20px;
+      }
+      @media (max-width: 660px) {
+        top: -10px;
+      }
+      @media (max-width: $pre-mob) {
+        background-image: url("../img/shapes/shape-hero1-mob.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: -50px;
+        background-position: right;
+      }
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/shapes/shape-hero2.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      bottom: -55px;
+      width: 100%;
+      height: 60px;
+      @media (max-width: $tab) {
+        background-size: 100%;
+      }
+      @media (max-width: $pre-mob) {
+        background-image: url("../img/shapes/shape-hero2-mob.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    .hero-inner-content {
+      .top {
+        display: flex;
+        gap: 50px;
+        @media (max-width: $tab) {
+          flex-direction: column;
+          gap: 43px;
+        }
+        h3 {
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 66px;
+          color: var(--white-color);
+          @media (max-width: $tab) {
+            font-size: 40px;
+            line-height: 44px;
+          }
+        }
+        .badge-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          p {
+            font-size: 16px;
+            line-height: 19px;
+            color: var(--white-color);
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .bottom {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin-top: 40px;
+        @media (max-width: $desktop-sm) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: $tab) {
+          grid-template-columns: repeat(1, 1fr);
+          gap: 25px;
+        }
+        .hero-card {
+          position: relative;
+          z-index: 2;
+          width: 100%;
+          &:before {
+            content: "";
+            width: 102%;
+            height: 103%;
+            background: var(--yellow-color);
+            position: absolute;
+            bottom: -7px;
+            border-radius: 14px;
+            z-index: 1;
+            left: -7px;
+          }
+          .hero-card-content {
+            background: var(--white-color);
+            border-radius: 11px;
+            padding: 27px 32px 37px;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            h5 {
+              font-weight: 700;
+              font-size: 32px;
+              line-height: 35px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 28px;
+              @media (max-width: $tab) {
+                font-size: 18px;
+                line-height: 25px;
+              }
+            }
+            span {
+              font-weight: 700;
+              font-size: 28px;
+              line-height: 34px;
+            }
+            .button-wrapper {
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              @media (max-width: $tab) {
+                flex-direction: column;
+              }
+              a,
+              button {
+                font-size: 14px;
+                line-height: 16px;
+                height: 45px;
+                p {
+                  font-size: 14px;
+                  line-height: 16px;
+                }
+                @media (max-width: $tab) {
+                  width: 286px;
+                }
+                @media (max-width: $pre-mob) {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .alert {
+        .alert-about {
+          background-image: url("../img/education/rectangle.png");
+          background-size: contain;
+          background-position: center;
+          padding: 114px 62px 117px;
+          background-repeat: no-repeat;
+          max-width: 815px;
+          margin: auto;
+          @media (max-width: $tab) {
+            background: var(--white-color);
+            box-shadow: var(--shadow);
+            padding: 18px 24px;
+            border-radius: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-image: none !important;
+          }
+          h4 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 35px;
+            background-image: var(--gradient);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            @media (max-width: $tab) {
+              font-size: 28px;
+              line-height: 33px;
+            }
+          }
+        }
+        a {
+          width: fit-content !important;
+          padding: 0 20px;
+          margin: auto;
+        }
+      }
+    }
+  }
+  .hero-images {
+    position: relative;
+    width: 100%;
+    .image-main-wrapper {
+      background-image: url("../img/hero-bg-main.jpg");
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: 106px;
+      min-height: 100vh;
+      @media (max-width: $mob) {
+        background-image: url("../img/hero-bg-main-mob.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    .image-alert-wrapper {
+      position: absolute;
+      width: 289px;
+      height: 289px;
+      left: 8%;
+      top: 60px;
+      z-index: 3;
+      @media (max-width: $desktop-sm) {
+        left: 5%;
+      }
+      @media (max-width: $tab) {
+        display: none;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .image-bg-wrapper {
+      background-image: url("../img/hero-bg.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      @media (max-width: $mob) {
+        background-image: url("../img/hero-bg-mob.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: -7%;
+      }
+      // img {
+      //   width: 100%;
+      //   height: 100%;
+      //   object-fit: cover;
+      // }
+    }
+    .image-title-wrapper {
+      width: 540px;
+      height: 330px;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 100px;
+      @media (max-width: $desktop-sm) {
+        width: 440px;
+        height: 282px;
+        top: 60px;
+      }
+      @media (max-width: $mob) {
+        width: 350px;
+        height: 215px;
+        top: 10%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

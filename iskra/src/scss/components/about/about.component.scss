@@ -1,0 +1,151 @@
+@import "../../common/files/variables.scss";
+.about {
+  padding-top: 156px;
+  @media (max-width: $tab) {
+    padding-top: 0;
+    overflow: hidden;
+  }
+  .about-inner {
+    .top {
+      display: flex;
+      gap: 70px;
+      @media (max-width: $tab) {
+        flex-direction: column-reverse;
+        padding-bottom: 40px;
+        gap: 36px;
+      }
+      .left {
+        width: 55%;
+        display: flex;
+        gap: 34px;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: flex-end;
+        @media (max-width: $tab) {
+          width: 100%;
+        }
+        .swiper-container {
+          display: none;
+          width: 100%;
+          @media (max-width: $tab) {
+            display: block;
+          }
+          .swiper-slide {
+            .image-wrapper {
+              border-radius: 15px;
+              overflow: hidden;
+              position: relative;
+              padding-bottom: 60%;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+              }
+            }
+          }
+        }
+        .photo {
+          @media (max-width: $tab) {
+            display: none;
+          }
+          &:nth-child(1) {
+            // aspect-ratio: 3;
+            width: calc(50% - 17px);
+            aspect-ratio: 2;
+            // height: calc(20vw / 2.3);
+          }
+          &:nth-child(2) {
+            width: calc(50% - 17px);
+            aspect-ratio: 1.2;
+          }
+          &:nth-child(3) {
+            width: calc(80% - 17px);
+            aspect-ratio: 1.5;
+          }
+        }
+      }
+      .right {
+        width: 45%;
+        padding-top: 75px;
+        @media (max-width: $tab) {
+          width: 100%;
+          padding-top: 87px;
+        }
+        h3 {
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 60px;
+          margin-bottom: 32px;
+          @media (max-width: $tab) {
+            font-size: 40px;
+            line-height: 44px;
+            margin-bottom: 40px;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 36px;
+          @media (max-width: $tab) {
+            font-size: 18px;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+    .center {
+      margin-top: 83px;
+      @media (max-width: $tab) {
+        margin-top: 0;
+      }
+      & > .image-wrapper {
+        width: 100%;
+        height: 100%;
+        @media (max-width: $tab) {
+          display: none;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .mobile-map {
+        display: none;
+        margin-bottom: 40px;
+        @media (max-width: $tab) {
+          display: block;
+        }
+        .image-wrapper {
+          width: 100%;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .button-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          button {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+    }
+    .bottom {
+      margin-bottom: 200px;
+      @media (max-width: $tab) {
+        margin-bottom: 135px;
+      }
+    }
+  }
+}

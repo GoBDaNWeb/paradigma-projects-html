@@ -1,0 +1,173 @@
+@import '../../common/files/variables.scss';
+
+
+.health {
+    position: relative;
+    background: var(--light-rose-color);
+    padding-top: 140px;
+    padding-bottom: 108px;
+    z-index: 9;
+    @media (max-width: $tab) {
+      padding-top: 80px;
+      padding-bottom: 62px;
+      background: #ffd9d0;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      background: url("../img/shapes/shape-health.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      bottom: -55px;
+      width: 100%;
+      height: 60px;
+      @media (max-width: $tab-sm) {
+        background: url("../img/shapes/shape-health-mob.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    .health-inner {
+      display: flex;
+      gap: 94px;
+      align-items: flex-end;
+      @media (max-width: $desktop-sm) {
+        gap: 55px;
+        align-items: flex-start;
+      }
+      @media (max-width: $tab) {
+        flex-direction: column;
+        gap: 35px;
+      }
+      .left {
+        width: 36%;
+        @media (max-width: $tab) {
+          width: 100%;
+        }
+        h3 {
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 66px;
+          margin-bottom: 83px;
+          @media (max-width: $tab) {
+            font-size: 40px;
+            line-height: 44px;
+            margin-bottom: 40px;
+          }
+        }
+        & > span {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 35px;
+          display: block;
+          margin-bottom: 50px;
+          @media (max-width: $tab) {
+            display: none;
+          }
+        }
+        & > p {
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 38px;
+          margin-bottom: 20px;
+          @media (max-width: $tab) {
+            display: none;
+          }
+        }
+        .file {
+          margin-bottom: 40px;
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          @media (max-width: $tab) {
+            display: none;
+          }
+          svg {
+            stroke: var(--black-color);
+          }
+          p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            @media (max-width: $tab) {
+              font-size: 18px;
+              line-height: 25px;
+              max-width: 263px;
+            }
+          }
+        }
+        button {
+          width: 300px;
+          @media (max-width: $tab) {
+            display: none;
+          }
+        }
+      }
+      .right {
+        width: 58%;
+        @media (max-width: $tab) {
+          width: 100%;
+        }
+        .file-wrapper {
+          display: none;
+          @media (max-width: $tab) {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 85px;
+          }
+          & > span {
+            font-size: 28px;
+            line-height: 33px;
+            font-weight: 700;
+          }
+          & > p {
+            font-size: 28px;
+            line-height: 33px;
+          }
+          .file {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            svg {
+              stroke: var(--black-color);
+            }
+            p {
+              @media (max-width: $tab) {
+                font-size: 18px;
+                line-height: 25px;
+                max-width: 263px;
+              }
+            }
+          }
+        }
+        .image-wrapper {
+          width: 100%;
+          max-height: 434px;
+          height: calc(20vw * 1.52);
+          border-radius: 15px;
+          overflow: hidden;
+          @media (max-width: $tab) {
+            height: calc(20vw * 2.7);
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .button-wrapper {
+          display: none;
+          @media (max-width: $tab) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            button {
+              width: 360px;
+            }
+          }
+        }
+      }
+    }
+  }

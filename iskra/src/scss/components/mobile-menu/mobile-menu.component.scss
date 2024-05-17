@@ -1,0 +1,75 @@
+@import "../../common/files/variables.scss";
+
+.mobile-menu.active {
+  transform: translate(0);
+  .mobile-menu-content {
+    opacity: 1;
+  }
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--white-color);
+  z-index: 90;
+  transform: translate(-100%);
+  transition: var(--trs-300);
+  height: 100vh;
+
+  .mobile-menu-content {
+    padding: 110px 15px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5%;
+    height: 100%;
+    opacity: 0;
+    transition: var(--trs-300);
+    @media (max-height: 600px) {
+      overflow: auto;
+    }
+    nav {
+      ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 35px;
+        li {
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 26px;
+          cursor: pointer;
+        }
+      }
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      .tel {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 43px;
+      }
+      button {
+        width: 100%;
+        height: 58px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+      }
+      a {
+        &:last-child {
+          margin-top: 10px;
+          color: var(--rose-color);
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}

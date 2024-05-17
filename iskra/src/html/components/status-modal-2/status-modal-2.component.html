@@ -1,0 +1,52 @@
+<div class="status-modal second">
+  <div class="status-modal-content">
+    <button class="close-btn">
+      <svg
+        width="18"
+        height="17"
+        viewBox="0 0 18 17"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16.0165 1L1.09424 15.8122"
+          stroke="#626262"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M1.09436 1L16.0166 15.8122"
+          stroke="#626262"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <h5>Изменить статус</h5>
+    <form>
+      <label class="custom-radio">
+        <input type="radio" name="status" value="under-consideration" checked />
+        <span></span>
+        <div class="badge warn">На рассмотрении</div>
+      </label>
+      <label class="custom-radio">
+        <input type="radio" name="status" value="modification" />
+        <span></span>
+        <div class="badge modification">В доработке</div>
+      </label>
+      <label class="custom-radio">
+        <input type="radio" name="status" value="success" />
+        <span></span>
+        <div class="badge success">Согласована</div>
+      </label>
+      <label class="custom-radio">
+        <input type="radio" name="status" value="rejected" />
+        <span></span>
+        <div class="badge error">Отклонена</div>
+      </label>
+      <input class="submit-btn" type="submit" value="Сохранить" />
+    </form>
+  </div>
+</div>

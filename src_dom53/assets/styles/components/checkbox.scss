@@ -1,0 +1,61 @@
+.custom-checkbox {
+  position: relative;
+  display: flex;
+  padding-left: 33px;
+  cursor: pointer;
+  width: fit-content;
+
+  @include mobile {
+    padding-left: 32px;
+  }
+}
+
+.custom-checkbox p {
+  font-size: 16px;
+  line-height: 130%;
+  position: relative;
+  top: -1px;
+
+  @include mobile {
+    font-size: 14px;
+    top: -3px;
+  }
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border: 1.4px solid $gray_6;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: $green;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom-checkbox .checkmark:after {
+  left: 1px;
+  top: 2px;
+  width: 14px;
+  height: 12px;;
+  background: url("../img/checkmark.svg") no-repeat center / contain;
+}

@@ -1,0 +1,68 @@
+.status-modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.status-modal.active .status-modal-content {
+  transform: translateY(0);
+}
+
+.status-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 110;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--trs-600);
+  pointer-events: none;
+}
+.status-modal .status-modal-content {
+  background: var(--white-color);
+  border-radius: 12px;
+  padding: 50px;
+  position: relative;
+  transition: var(--trs-600);
+  transform: translateY(-100%);
+}
+.status-modal .status-modal-content .close-btn {
+  padding: 0;
+  top: 17px;
+  right: 19px;
+  position: absolute;
+}
+.status-modal .status-modal-content h5 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+.status-modal .status-modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+.status-modal .status-modal-content form label {
+  padding: 21px 16px;
+  border-top: 1px solid #f5f7fa;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.status-modal .status-modal-content form label:first-child {
+  border-top: none;
+}
+.status-modal .status-modal-content form label input {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.status-modal .status-modal-content form input:is([type=submit]) {
+  width: 100%;
+  height: 52px;
+  margin-top: 24px;
+}/*# sourceMappingURL=status-modal.component.css.map */

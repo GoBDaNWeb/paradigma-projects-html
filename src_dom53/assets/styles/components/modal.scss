@@ -1,0 +1,319 @@
+.modal {
+  background: rgba(107, 107, 107, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: calc(var(--vhForModal, 1vh) * 100);
+  width: 100vw;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0.1s, opacity 0.3s ease;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  &.open, &.active {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+  }
+
+  .modal__wrap {
+    background: $white;
+    padding: 48px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    @include desktop-big {
+      padding: 64px;
+    }
+
+    @include mobile {
+      padding: 21px;
+      width: 100%!important;
+      height: 100%!important;
+    }
+  }
+
+  .modal__close, &-close {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 48px;
+    top: 48px;
+    content: '';
+    cursor: pointer;
+    background: url("../img/close.svg") no-repeat center / contain;
+
+    @include desktop-big {
+      right: 64px;
+      top: 64px;
+    }
+
+    @include tablet {
+      right: 49px;
+    }
+
+    @include mobile {
+      right: 19px;
+      top: 32px;
+    }
+  }
+
+  .modal__header {
+    margin-bottom: 16px;
+
+    @include desktop-big {
+      font-size: 46px;
+      line-height: 56px;
+    }
+
+    @include tablet {
+      font-size: 46px;
+      line-height: 56px;
+    }
+
+    @include mobile {
+      font-size: 28px;
+      line-height: 36px;
+      width: 200px;
+    }
+  }
+
+  .modal__text {
+    margin-bottom: 46px;
+
+    @include desktop-big {
+      margin-bottom: 53px;
+    }
+
+    @include tablet {
+      width: 80%;
+    }
+
+    @include mobile {
+      width: 310px;
+      margin-bottom: 39px;
+    }
+  }
+
+  .modal__form {
+    @include mobile {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .modal__form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 39px;
+
+    @include desktop-big {
+      margin-bottom: 46px;
+    }
+
+    @include mobile {
+      margin-bottom: 31px;
+      height: inherit;
+    }
+  }
+
+  .modal__form-item_phone {
+    margin-bottom: 0;
+  }
+
+  .modal__form-item label {
+    font-size: 14px;
+    line-height: 130%;
+    color: $black;
+    padding-left: 7px;
+
+    @include desktop-big {
+      font-size: 18px;
+      line-height: 140%;
+      padding-left: 6px;
+    }
+
+    @include mobile {
+      padding-left: 6px;
+    }
+  }
+
+  .modal__form-item input {
+    padding: 15px 15px 14px;
+    border: none;
+    border-bottom: 1px solid $gray_1;
+    outline: none;
+    font-size: 16px;
+    line-height: 130%;
+
+    @include desktop-big {
+      font-size: 18px;
+      line-height: 140%;
+      padding: 9px 16px 10px;
+    }
+  }
+
+  .modal__form-item input::placeholder {
+    color: $gray_3;
+  }
+
+  .modal__form-button-wrap {
+    margin: 48px 0 26px;
+    display: flex;
+    align-items: center;
+
+    @include desktop-big {
+      margin: 56px 0 27px;
+    }
+
+    @include mobile {
+      margin: auto 0 18px;
+    }
+
+    .button {
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 130%;
+      color: $black;
+      margin-left: 24px;
+
+      @include desktop-big {
+        font-size: 16px;
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  .modal__icon {
+    background: url("../img/success.svg") no-repeat center / contain;
+    width: 80px;
+    height: 80px;
+
+    @include desktop-big {
+      width: 100px;
+      height: 100px;
+    }
+    &.modal-icon {
+      margin-bottom: 48px;
+      @include tablet {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .modal__success-text {
+    font-size: 32px;
+    line-height: 120%;
+    color: $black;
+    margin-top: auto;
+    width: 85%;
+
+    @include desktop-big {
+      font-size: 46px;
+      line-height: 122%;
+      width: 100%;
+    }
+
+    @include mobile {
+      margin-top: 49px;
+      width: 100%;
+    }
+  }
+  .modal__success-button {
+    display: none;
+    margin-top: auto;
+
+    @include mobile {
+      display: block;
+    }
+  }
+  &-desc {
+    margin-bottom: 48px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    @include desktop-big {
+      font-size: 22px;
+    }
+  }
+  .section {
+    &-title {
+      margin-bottom: 16px;
+      @include desktop-big {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+body {
+  &.hidden {
+    overflow: hidden;
+  }
+}
+
+.modal__feedback {
+  display: flex;
+
+  .modal__wrap {
+    width: 679px;
+    height: 584px;
+
+    @include desktop-big {
+      width: 854px;
+      height: 670px;
+    }
+
+    @include tablet {
+      width: 701px;
+    }
+
+    @include mobile {
+      padding-top: 32px;
+      padding-bottom: 37px;
+    }
+  }
+}
+
+.modal__success {
+  display: flex;
+
+  .modal__wrap {
+    width: 503px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop-big {
+      width: 619px;
+      height: 388px;
+    }
+
+    @include tablet {
+      width: 503px;
+      height: 300px;
+    }
+
+    @include mobile {
+      padding-top: 18.3vh;
+      padding-bottom: 12.9vh;
+    }
+  }
+}

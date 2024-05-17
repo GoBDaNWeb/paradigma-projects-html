@@ -1,0 +1,3452 @@
+<div class="account">
+  <div class="container">
+    <div class="account-inner">
+      <div class="account-tabs">
+        <button class="tab active" data-tab="1">Верификация сотрудников</button>
+        <button class="tab" data-tab="2">Обработка заявок</button>
+        <button class="tab" data-tab="3">Пользователи</button>
+        <button class="tab" data-tab="4">Заявки на компенсацию</button>
+      </div>
+      <div class="account-content">
+        <div class="verification-wrapper tab-content" data-tab="1">
+          <div class="top">
+            <h4>Заявки на проверку</h4>
+            <button class="outline-purple export">Экспорт</button>
+          </div>
+          <div class="verification-list">
+            <table border="0" cellspacing="0" cellpadding="0">
+              <thead>
+                <tr>
+                  <th>ФИО</th>
+                  <th>Табельный номер</th>
+                  <th>Почта</th>
+                  <th>Номер телефона</th>
+                  <th>
+                    <button>
+                      Тип пользователя
+                      <svg
+                        width="12"
+                        height="8"
+                        viewBox="0 0 12 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1.5L6 6.5L11 1.5"
+                          stroke="#1A1A1A"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </th>
+                  <th>
+                    <button>
+                      Статус
+                      <svg
+                        width="12"
+                        height="8"
+                        viewBox="0 0 12 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1.5L6 6.5L11 1.5"
+                          stroke="#1A1A1A"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    Константинопольский <br />
+                    Иван Константинович
+                  </th>
+                  <td>83472993</td>
+                  <td>kons.k.i@mggt.ru</td>
+                  <td>+7 934 345 53 43</td>
+                  <td>Действующий сотрудник</td>
+                  <td>
+                    <button class="badge warn status-btn">
+                      На рассмотрении
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Филатов Максим <br />
+                    Анатольевич
+                  </th>
+                  <td>—</td>
+                  <td>kons.k.i@mggt.ru</td>
+                  <td>+7 951 533 90 12</td>
+                  <td>Пенсионер (бывший сотрудник)</td>
+                  <td>
+                    <button class="badge success status-btn">
+                      Согласована
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>38472948</td>
+                  <td>kons.k.i@mggt.ru</td>
+                  <td>+7 922 345 93 74</td>
+                  <td>Действующий сотрудник</td>
+                  <td>
+                    <button class="badge error status-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>38472948</td>
+                  <td>kons.k.i@mggt.ru</td>
+                  <td>+7 922 345 93 74</td>
+                  <td>Действующий сотрудник</td>
+                  <td>
+                    <button class="badge error status-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>38472948</td>
+                  <td>kons.k.i@mggt.ru</td>
+                  <td>+7 922 345 93 74</td>
+                  <td>Действующий сотрудник</td>
+                  <td>
+                    <button class="badge error status-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>38472948</td>
+                  <td>kons.k.i@mggt.ru</td>
+                  <td>+7 922 345 93 74</td>
+                  <td>Действующий сотрудник</td>
+                  <td>
+                    <button class="badge error status-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>38472948</td>
+                  <td>kons.k.i@mggt.ru</td>
+                  <td>+7 922 345 93 74</td>
+                  <td>Действующий сотрудник</td>
+                  <td>
+                    <button class="badge error status-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>38472948</td>
+                  <td>kons.k.i@mggt.ru</td>
+                  <td>+7 922 345 93 74</td>
+                  <td>Действующий сотрудник</td>
+                  <td>
+                    <button class="badge error status-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>38472948</td>
+                  <td>kons.k.i@mggt.ru</td>
+                  <td>+7 922 345 93 74</td>
+                  <td>Действующий сотрудник</td>
+                  <td>
+                    <button class="badge error status-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>38472948</td>
+                  <td>kons.k.i@mggt.ru</td>
+                  <td>+7 922 345 93 74</td>
+                  <td>Действующий сотрудник</td>
+                  <td>
+                    <button class="badge error status-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="outline-purple export mob">Экспорт</button>
+        </div>
+        <div class="request-wrapper tab-content hidden" data-tab="2">
+          <div class="top">
+            <h4>Заявки</h4>
+            <button class="outline-purple export">Экспорт</button>
+          </div>
+          <div class="request-list">
+            <table border="0" cellspacing="0" cellpadding="0">
+              <thead>
+                <tr>
+                  <th>ID <br />заявки</th>
+                  <th>
+                    <button>
+                      Смена
+                      <svg
+                        width="12"
+                        height="8"
+                        viewBox="0 0 12 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1.5L6 6.5L11 1.5"
+                          stroke="#1A1A1A"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </th>
+                  <th>ФИО пользователя</th>
+                  <th>
+                    <button>
+                      Тип пользователя
+                      <svg
+                        width="12"
+                        height="8"
+                        viewBox="0 0 12 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1.5L6 6.5L11 1.5"
+                          stroke="#1A1A1A"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </th>
+                  <th>
+                    Профиль <br />
+                    пользователя
+                  </th>
+                  <th>Табельный номер</th>
+                  <th>ФИО ребенка</th>
+                  <th>
+                    Профиль <br />
+                    ребенка
+                  </th>
+                  <th>ФИО зак. <br />представителя</th>
+                  <th>Профиль <br />зак. представителя</th>
+                  <th>
+                    Номер <br />
+                    транзакции
+                  </th>
+                  <th>
+                    <button>
+                      Статус
+                      <svg
+                        width="12"
+                        height="8"
+                        viewBox="0 0 12 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1.5L6 6.5L11 1.5"
+                          stroke="#1A1A1A"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>224959</td>
+                  <td><div class="shift"><p>Первая смена <br />01.06.24-21.06.24</p><p>Вторая смена <br />01.06.24-21.06.24</p></div> </td>
+                  <td class="name">
+                    Константинопольский <br />
+                    Константин Иванович
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Константинопольский <br />
+                    Иван Константинович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">
+                    Константинопольский <br />
+                    Константин Иванович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>317-287</td>
+                  <td>
+                    <button class="badge warn status-2-btn">
+                      На рассмотрении
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>234943</td>
+                  <td>Первая смена <br />01.06.24-21.06.24</td>
+                  <td class="name">
+                    Филатов Максим <br />
+                    Анатольевич
+                  </td>
+                  <td>Действующий <br />сотрудник</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>-</td>
+                  <td class="name">
+                    Филатов Андрей <br />
+                    Максимович
+                  </td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td class="name">Филатов Максим Анатольевич</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                  <td>
+                    <div class="badge error">Не оплачено</div>
+                  </td>
+                  <td>
+                    <button class="badge error status-2-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="outline-purple export mob">Экспорт</button>
+        </div>
+        <div class="search-wrapper tab-content hidden" data-tab="3">
+          <div class="top">
+            <div class="left">
+              <h4>Поиск пользователя</h4>
+              <label>
+                <input type="text" />
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                    stroke="#626262"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20.9999 20.9999L16.6499 16.6499"
+                    stroke="#626262"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </label>
+            </div>
+            <button class="outline-purple export">Экспорт</button>
+          </div>
+          <div class="search-list">
+            <table border="0" cellspacing="0" cellpadding="0">
+              <thead>
+                <tr>
+                  <th>ФИО</th>
+                  <th>
+                    <button>
+                      Тип пользователя
+                      <svg
+                        width="12"
+                        height="8"
+                        viewBox="0 0 12 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1.5L6 6.5L11 1.5"
+                          stroke="#1A1A1A"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </th>
+                  <th>Табельный номер</th>
+                  <th>Почта</th>
+                  <th>Номер телефона</th>
+                  <th>
+                    <button>
+                      Профиль
+                      <svg
+                        width="12"
+                        height="8"
+                        viewBox="0 0 12 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1.5L6 6.5L11 1.5"
+                          stroke="#1A1A1A"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>
+                    Константинопольский <br />
+                    Иван Константинович
+                  </th>
+                  <td>Действующий сотрудник</td>
+                  <td>83472993</td>
+                  <td>kons.k.i@mggt.ru</td>
+                  <td>+7 934 345 53 43</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Филатов Максим <br />
+                    Анатольевич
+                  </th>
+                  <td>Пенсионер (бывший сотрудник)</td>
+                  <td>—</td>
+                  <td>filatov@gmail.com</td>
+                  <td>+7 951 533 90 12</td>
+                  <td>
+                    <button
+                      class="clear-purple representative-info-btn"
+                      data-representativeId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>Ребенок</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>Ребенок</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>Ребенок</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>Ребенок</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>Ребенок</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    Алексашин Алексей <br />
+                    Петрович
+                  </th>
+                  <td>Ребенок</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>
+                    <button
+                      class="clear-purple child-info-btn"
+                      data-childId="1"
+                    >
+                      Посмотреть
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="outline-purple export mob">Экспорт</button>
+        </div>
+        <div class="compensation-wrapper tab-content hidden" data-tab="4">
+          <div class="top">
+            <h4>Заявки на проверку</h4>
+            <button class="outline-purple export">Экспорт</button>
+          </div>
+          <div class="compensation-table-tab">
+            <button class="compensation-tab active" data-tab="1">Мосгоргеотрест</button>
+            <button class="compensation-tab" data-tab="2">Москва</button>
+          </div>
+          <div class="compensation-table-list" data-tab="1">
+            <table border="0" cellspacing="0" cellpadding="0">
+              <thead>
+                <tr>
+                  <th>id заявки</th>
+                  <th>ФИО пользователя</th>
+                  <th>
+                    <button>
+                      Тип пользователя
+                      <svg
+                        width="12"
+                        height="8"
+                        viewBox="0 0 12 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1.5L6 6.5L11 1.5"
+                          stroke="#1A1A1A"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </th>
+                  <th>Профиль пользователя</th>
+                  <th>ФИО ребенка</th>
+                  <th>Профиль ребенка</th>
+                  <th>Документы компенсации</th>
+                  <th>
+                    <button>
+                      Статус
+                      <svg
+                        width="12"
+                        height="8"
+                        viewBox="0 0 12 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1.5L6 6.5L11 1.5"
+                          stroke="#1A1A1A"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    111111
+                  </td>
+                  <td class="name">
+                    Константинопольский <br />
+                    Иван Константинович
+                  </td>
+                  <td>Действующий сотрудник</td>
+                  <td><button
+                    class="clear-purple representative-info-btn"
+                    data-representativeId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td class="name"> Константинопольский <br />
+                    Иван Константинович</td>
+                  <td><button
+                    class="clear-purple child-info-btn"
+                    data-childId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td><button class="clear-purple compensation-info-btn" data-compensationid="1">Посмотреть</button></td>
+                  <td>
+                    <button class="badge warn status-3-btn">
+                      На рассмотрении
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    111111
+                  </td>
+                  <th>
+                    Константинопольский <br />
+                    Иван Константинович
+                  </th>
+                  <td>Действующий сотрудник</td>
+                  <td><button
+                    class="clear-purple representative-info-btn"
+                    data-representativeId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td class="name"> Константинопольский <br />
+                    Иван Константинович</td>
+                  <td><button
+                    class="clear-purple child-info-btn"
+                    data-childId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td><button class="clear-purple compensation-info-btn" data-compensationid="1">Посмотреть</button></td>
+                  <td>
+                    <button class="badge warn status-3-btn">
+                      На рассмотрении
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    111111
+                  </td>
+                  <th>
+                    Константинопольский <br />
+                    Иван Константинович
+                  </th>
+                  <td>Действующий сотрудник</td>
+                  <td><button
+                    class="clear-purple representative-info-btn"
+                    data-representativeId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td class="name"> Константинопольский <br />
+                    Иван Константинович</td>
+                  <td><button
+                    class="clear-purple child-info-btn"
+                    data-childId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td><button class="clear-purple compensation-info-btn" data-compensationid="1">Посмотреть</button></td>
+                  <td>
+                    <button class="badge error status-3-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    111111
+                  </td>
+                  <th>
+                    Константинопольский <br />
+                    Иван Константинович
+                  </th>
+                  <td>Действующий сотрудник</td>
+                  <td><button
+                    class="clear-purple representative-info-btn"
+                    data-representativeId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td class="name"> Константинопольский <br />
+                    Иван Константинович</td>
+                  <td><button
+                    class="clear-purple child-info-btn"
+                    data-childId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td><button class="clear-purple compensation-info-btn" data-compensationid="1">Посмотреть</button></td>
+                  <td>
+                    <button class="badge warn status-3-btn">
+                      На рассмотрении
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    111111
+                  </td>
+                  <th>
+                    Константинопольский <br />
+                    Иван Константинович
+                  </th>
+                  <td>Действующий сотрудник</td>
+                  <td><button
+                    class="clear-purple representative-info-btn"
+                    data-representativeId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td class="name"> Константинопольский <br />
+                    Иван Константинович</td>
+                  <td><button
+                    class="clear-purple child-info-btn"
+                    data-childId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td><button class="clear-purple compensation-info-btn" data-compensationid="1">Посмотреть</button></td>
+                  <td>
+                    <button class="badge warn status-3-btn">
+                      На рассмотрении
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    111111
+                  </td>
+                  <th>
+                    Константинопольский <br />
+                    Иван Константинович
+                  </th>
+                  <td>Действующий сотрудник</td>
+                  <td><button
+                    class="clear-purple representative-info-btn"
+                    data-representativeId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td class="name"> Константинопольский <br />
+                    Иван Константинович</td>
+                  <td><button
+                    class="clear-purple child-info-btn"
+                    data-childId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td><button class="clear-purple compensation-info-btn" data-compensationid="1">Посмотреть</button></td>
+                  <td>
+                    <button class="badge error status-3-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    111111
+                  </td>
+                  <th>
+                    Константинопольский <br />
+                    Иван Константинович
+                  </th>
+                  <td>Действующий сотрудник</td>
+                  <td><button
+                    class="clear-purple representative-info-btn"
+                    data-representativeId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td class="name"> Константинопольский <br />
+                    Иван Константинович</td>
+                  <td><button
+                    class="clear-purple child-info-btn"
+                    data-childId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td><button class="clear-purple compensation-info-btn" data-compensationid="1">Посмотреть</button></td>
+                  <td>
+                    <button class="badge warn status-3-btn">
+                      На рассмотрении
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    111111
+                  </td>
+                  <th>
+                    Константинопольский <br />
+                    Иван Константинович
+                  </th>
+                  <td>Действующий сотрудник</td>
+                  <td><button
+                    class="clear-purple representative-info-btn"
+                    data-representativeId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td class="name"> Константинопольский <br />
+                    Иван Константинович</td>
+                  <td><button
+                    class="clear-purple child-info-btn"
+                    data-childId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td><button class="clear-purple compensation-info-btn" data-compensationid="1">Посмотреть</button></td>
+                  <td>
+                    <button class="badge warn status-3-btn">
+                      На рассмотрении
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    111111
+                  </td>
+                  <th>
+                    Константинопольский <br />
+                    Иван Константинович
+                  </th>
+                  <td>Действующий сотрудник</td>
+                  <td><button
+                    class="clear-purple representative-info-btn"
+                    data-representativeId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td class="name"> Константинопольский <br />
+                    Иван Константинович</td>
+                  <td><button
+                    class="clear-purple child-info-btn"
+                    data-childId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td><button class="clear-purple compensation-info-btn" data-compensationid="1">Посмотреть</button></td>
+                  <td>
+                    <button class="badge error status-3-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+          <div class="compensation-table-list hidden" data-tab="2">
+            <table border="0" cellspacing="0" cellpadding="0">
+              <thead>
+                <tr>
+                  <th>id заявки</th>
+                  <th>ФИО пользователя</th>
+                  <th>
+                    <button>
+                      Тип пользователя
+                      <svg
+                        width="12"
+                        height="8"
+                        viewBox="0 0 12 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1.5L6 6.5L11 1.5"
+                          stroke="#1A1A1A"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </th>
+                  <th>Профиль пользователя</th>
+                  <th>ФИО ребенка</th>
+                  <th>Профиль ребенка</th>
+                  <th>Документы компенсации</th>
+                  <th>
+                    <button>
+                      Статус
+                      <svg
+                        width="12"
+                        height="8"
+                        viewBox="0 0 12 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1.5L6 6.5L11 1.5"
+                          stroke="#1A1A1A"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>111111</td>
+                  <td class="name">
+                    Константинопольский <br />
+                    Иван Константинович
+                  </td>
+                  <td>Действующий сотрудник</td>
+                  <td><button
+                    class="clear-purple representative-info-btn"
+                    data-representativeId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td class="name"> Константинопольский <br />
+                    Иван Константинович</td>
+                  <td><button
+                    class="clear-purple child-info-btn"
+                    data-childId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td><button class="clear-purple compensation-info-btn" data-compensationid="2">Посмотреть</button></td>
+                  <td>
+                    <button class="badge warn status-3-btn">
+                      На рассмотрении
+                    </button>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>111111</td>
+                  <td class="name">
+                    Константинопольский <br />
+                    Иван Константинович
+                  </td>
+                  <td>Действующий сотрудник</td>
+                  <td><button
+                    class="clear-purple representative-info-btn"
+                    data-representativeId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td class="name"> Константинопольский <br />
+                    Иван Константинович</td>
+                  <td><button
+                    class="clear-purple child-info-btn"
+                    data-childId="1"
+                  >
+                    Посмотреть
+                  </button></td>
+                  <td><button class="clear-purple compensation-info-btn" data-compensationid="2">Посмотреть</button></td>
+                  <td>
+                    <button class="badge error status-3-btn">Отклонена</button>
+                    <button data-tooltip="tooltip-1" class="tooltip-btn">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.4375 22.5C17.4375 23.2939 16.7939 23.9375 16 23.9375C15.2061 23.9375 14.5625 23.2939 14.5625 22.5C14.5625 21.7061 15.2061 21.0625 16 21.0625C16.7939 21.0625 17.4375 21.7061 17.4375 22.5Z"
+                          fill="#767676"
+                          stroke="#767676"
+                          stroke-width="0.125"
+                        />
+                        <path
+                          d="M16 18V17C16.6922 17 17.3689 16.7947 17.9445 16.4101C18.5201 16.0256 18.9687 15.4789 19.2336 14.8394C19.4985 14.1999 19.5678 13.4961 19.4327 12.8172C19.2977 12.1383 18.9644 11.5146 18.4749 11.0251C17.9854 10.5356 17.3617 10.2023 16.6828 10.0673C16.0039 9.9322 15.3002 10.0015 14.6606 10.2664C14.0211 10.5313 13.4744 10.9799 13.0899 11.5555C12.7053 12.1311 12.5 12.8078 12.5 13.5"
+                          stroke="#767676"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    @@include('../tooltip/tooltip.component.html', {})
+                  </td>
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+          <button class="outline-purple export mob">Экспорт</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

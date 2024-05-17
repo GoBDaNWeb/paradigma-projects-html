@@ -1,0 +1,83 @@
+:root {
+  --yellow-color: #ffaf00;
+  --beige-color: #ffe7af;
+  --purple-color: #833a8a;
+  --lavand-color: #facbff;
+  --rose-color: #ff0056;
+  --light-rose-color: #ffcbd2;
+  --pink-color: #ff4281;
+  --black-color: #000;
+  --white-color: #fff;
+  --gray-color: #dedede;
+  --trs-300: 300ms ease;
+  --trs-600: 600ms ease;
+  --trs-800: 800ms ease;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(255, 175, 0, 1) 0%,
+    rgba(246, 24, 103, 1) 49%,
+    rgba(130, 58, 138, 1) 100%
+  );
+  --shadow: 0px 4px 30px 0px rgba(34, 60, 80, 0.25);
+}
+
+footer {
+  background: var(--purple-color);
+  position: relative;
+  z-index: 1;
+  padding-top: 90px;
+  padding-bottom: 22px;
+}
+@media (max-width: 1024px) {
+  footer {
+    padding-top: 41px;
+  }
+}
+footer .footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 1024px) {
+  footer .footer-inner {
+    gap: 78px;
+  }
+}
+footer .footer-inner .top {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+@media (max-width: 1024px) {
+  footer .footer-inner .top {
+    flex-direction: column;
+  }
+}
+footer .footer-inner .top .logo {
+  width: 128px;
+  height: 27px;
+}
+footer .footer-inner .top .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .footer-inner .top .politic {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .footer-inner .top .politic a {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white-color);
+  line-height: 22px;
+}
+footer .footer-inner .bottom p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.3;
+  color: var(--white-color);
+}/*# sourceMappingURL=footer.component.css.map */

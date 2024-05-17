@@ -1,0 +1,12 @@
+.badge {
+  border-radius: 39px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  height: 45px;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  color: var(--green-color);
+}

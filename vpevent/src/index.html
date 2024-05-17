@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/components/head/head.component.html', { 'title':'VALKOV EVENT', })
+  <body>
+    @@include('html/components/header/header.component.html', {})
+    @@include('html/components/menu/menu.component.html', {})
+    <main>
+      @@include('html/components/hero/hero.component.html', {})
+      @@include('html/components/afisha/afisha.component.html', {})
+      @@include('html/components/services-hero/services-hero.component.html',
+      {}) 
+      @@include('html/components/services/services.component.html', {})
+      @@include('html/components/gallery-hero/gallery-hero.component.html', {})
+      @@include('html/components/gallery/gallery.component.html', {})
+      @@include('html/components/faq/faq.component.html', {})
+      @@include('html/components/partners/partners.component.html', {})
+      @@include('html/components/footer/footer.component.html', {})
+    </main>
+
+    @@include('html/components/afisha-modal/afisha-modal.component.html',
+    {afisha: '1'})
+    @@include('html/components/service-modal/service-modal.component.html',
+    {service: '1'})
+    @@include('html/components/service-modal/service-modal.component.html',
+    {service: '2'})
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+@import "../../common/files/variables.scss";
+
+.partners {
+  margin-top: 188px;
+  @media (max-width: $tab) {
+    margin-top: 80px;
+  }
+  .partners-top {
+    .partners-top-inner {
+      h3 {
+        font-weight: 500;
+        font-size: 130px;
+        line-height: 156px;
+        text-transform: uppercase;
+        @media (max-width: $tab) {
+          font-size: 70px;
+          line-height: 84px;
+        }
+      }
+    }
+  }
+  .partners-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    .partners-bottom-inner {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+      height: 100%;
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      .partner-item {
+        position: relative;
+        padding-bottom: 100%;
+        border-radius: 9999px;
+        min-width: 150px;
+        min-height: 150px;
+        animation: rotate 10s linear infinite;
+        &:nth-child(1) {
+          background: #ff8e9d;
+        }
+        &:nth-child(2) {
+          background: #48bdff;
+        }
+        &:nth-child(3) {
+          background: #ffef42;
+        }
+        &:nth-child(4) {
+          background: #e88fff;
+        }
+        div {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            @media (max-width: $tab) {
+              width: 85%;
+              height: 40%;
+            }
+            @media (max-width: $pre-mob) {
+              width: 80%;
+              height: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

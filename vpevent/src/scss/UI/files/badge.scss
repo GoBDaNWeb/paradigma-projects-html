@@ -1,0 +1,18 @@
+.badge.tab.fill {
+  color: var(--dark-color);
+}
+.badge.tab {
+  color: var(--green-color);
+}
+.badge.fill {
+  background: var(--green-color);
+}
+.badge {
+  border: 1px solid var(--green-color);
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--trs-300);
+}

@@ -1,0 +1,127 @@
+:root {
+  --yellow-color: #ffaf00;
+  --beige-color: #ffe7af;
+  --purple-color: #833a8a;
+  --lavand-color: #facbff;
+  --rose-color: #ff0056;
+  --light-rose-color: #ffcbd2;
+  --pink-color: #ff4281;
+  --black-color: #000;
+  --white-color: #fff;
+  --gray-color: #dedede;
+  --trs-300: 300ms ease;
+  --trs-600: 600ms ease;
+  --trs-800: 800ms ease;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(255, 175, 0, 1) 0%,
+    rgba(246, 24, 103, 1) 49%,
+    rgba(130, 58, 138, 1) 100%
+  );
+  --shadow: 0px 4px 30px 0px rgba(34, 60, 80, 0.25);
+}
+
+.badge {
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.badge.outline {
+  background: none;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.badge.primary {
+  background: rgb(255, 175, 0);
+  background: var(--gradient);
+  color: var(--white-color);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  border-radius: 51px;
+}
+@media (max-width: 1024px) {
+  .badge.primary {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.badge.warn {
+  border-radius: 15px;
+  background: #fff4e4;
+  color: #e99518;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge.success {
+  border-radius: 15px;
+  background: rgba(0, 221, 141, 0.14);
+  color: #00dd8d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge.error {
+  border-radius: 15px;
+  background: rgba(249, 50, 50, 0.15);
+  color: #f93232;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge.approved {
+  border-radius: 15px;
+  background: #ededfe;
+  color: #833a8a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge.modification {
+  border-radius: 15px;
+  background: #fffacb;
+  color: #af7f36;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=badge.css.map */

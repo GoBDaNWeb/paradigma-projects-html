@@ -1,0 +1,99 @@
+<div id="about" class="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="top">
+        <div class="left">
+          <div class="photo">
+            <div class="image-wrapper">
+              <img src="@img/about/1.jpg" alt="photo" />
+            </div>
+          </div>
+          <div class="photo">
+            <div class="image-wrapper">
+              <img src="@img//about/2.jpg" alt="photo" />
+            </div>
+          </div>
+          <div class="photo">
+            <div class="image-wrapper">
+              <img src="@img//about/3.jpg" alt="photo" />
+            </div>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-about-photo">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="image-wrapper">
+                    <img src="@img/about/1.jpg" alt="photo" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-wrapper">
+                    <img src="@img/about/2.jpg" alt="photo" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-wrapper">
+                    <img src="@img/about/3.jpg" alt="photo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <MainSwiper :swiperClass="'house-swiper'">
+                <SwiperSlide v-for="img in photoList" :key="img.id">
+                  <div class="image-wrapper">
+                    <img :src="img.img" alt="photo" />
+                  </div>
+                </SwiperSlide>
+              </MainSwiper> -->
+          </div>
+        </div>
+        <div class="right">
+          <h3>О лагере</h3>
+          <p>
+            Детский оздоровительный лагерь «Искра» ГБУ «Мосгоргеотрест»
+            располагается в живописнейшем районе города Красногорска, микрорайон
+            Опалиха, в лесной зоне. <br /><br />
+            Лагерь стационарный, находится в дубовом бору. Чистейший воздух, в
+            жару прохлада от тени дубов, пение птиц, цветы на клумбах и в
+            вазонах создают атмосферу сказочного места и дарят нашим детям
+            отличный отдых и прекрасное настроение
+          </p>
+        </div>
+      </div>
+      <div class="center">
+        <div class="image-wrapper">
+          <img src="@img/about/map.png" alt="map" />
+        </div>
+        <div class="mobile-map">
+          <div class="image-wrapper">
+            <img src="@img/about/map-mob.png" alt="map" />
+          </div>
+          <div class="button-wrapper">
+            <button class="full-map-btn">
+              <svg
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.05769 2.77939C5.3972 2.77939 2.42978 5.7468 2.42978 9.4073C2.42978 13.0678 5.3972 16.0352 9.05769 16.0352C12.7182 16.0352 15.6856 13.0678 15.6856 9.4073C15.6856 5.7468 12.7182 2.77939 9.05769 2.77939ZM0.441406 9.4073C0.441406 4.64866 4.29905 0.791016 9.05769 0.791016C13.8163 0.791016 17.674 4.64866 17.674 9.4073C17.674 11.4284 16.9781 13.287 15.8129 14.7565L20.0339 18.9776C20.4222 19.3658 20.4222 19.9953 20.0339 20.3835C19.6457 20.7718 19.0162 20.7718 18.6279 20.3835L14.4069 16.1625C12.9374 17.3277 11.0788 18.0236 9.05769 18.0236C4.29905 18.0236 0.441406 14.1659 0.441406 9.4073Z"
+                  fill="black"
+                />
+              </svg>
+              увеличить
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        @@include('../about-swiper/about-swiper.component.html', {})
+
+        <!-- <AboutSwiper /> -->
+      </div>
+    </div>
+  </div>
+</div>

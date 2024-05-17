@@ -1,0 +1,24 @@
+@import "normalize.css";
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/globals';
+@import 'base/fonts';
+
+@import 'components/fancybox';
+@import 'components/swiper';
+@import 'components/modal';
+@import 'components/navigation';
+@import 'components/breadcrumbs';
+@import 'components/checkbox';
+@import 'components/filter';
+@import 'components/sort';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/catalog';
+@import 'pages/project';
+@import 'pages/contacts';
+@import 'pages/gallery';
+@import 'pages/home';

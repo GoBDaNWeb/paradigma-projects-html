@@ -1,0 +1,135 @@
+@import "../../common/files/variables.scss";
+
+.info-card-representative.active {
+  opacity: 1;
+  pointer-events: all;
+  .info-card-representative-content {
+    transform: translateY(0);
+  }
+}
+.info-card-representative {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 110;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--trs-600);
+  pointer-events: none;
+  @media (max-width: $tab) {
+    overflow: auto;
+  }
+  .info-card-representative-content {
+    background: var(--white-color);
+    border-radius: 12px;
+    padding: 50px;
+    position: relative;
+    max-width: 1020px;
+    width: 100%;
+    transition: var(--trs-600);
+    transform: translateY(-100%);
+    margin: 0 20px;
+    @media (max-width: $tab) {
+      padding: 30px;
+    }
+    .close-btn {
+      padding: 0;
+      top: 17px;
+      right: 19px;
+      position: absolute;
+    }
+    h5 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 35px;
+      @media (max-width: $tab) {
+        font-size: 26px;
+        line-height: 28px;
+      }
+    }
+    .info-card-content {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      @media (max-width: $tab-sm) {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin-top: 30px;
+      }
+      .info-item {
+        width: 100%;
+        h6 {
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 38px;
+          margin-bottom: 35px;
+        }
+
+        &:first-child {
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            li {
+              display: grid;
+              grid-template-columns: 0.4fr 1fr;
+              align-items: baseline;
+              gap: 25px;
+              @media (max-width: $tab) {
+                grid-template-columns: 0.6fr 1fr;
+              }
+              @media (max-width: $tab-sm) {
+                grid-template-columns: 0.8fr 1fr;
+                gap: 15px;
+              }
+              span {
+                font-size: 16px;
+                line-height: 2px;
+                color: #626262;
+                text-align: right;
+              }
+              p {
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+        &:last-child {
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            li {
+              position: relative;
+              p {
+                padding-left: 40px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+              }
+              &:before {
+                content: "";
+                position: absolute;
+                background-image: url("../img/check.svg");
+                width: 24px;
+                height: 24px;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

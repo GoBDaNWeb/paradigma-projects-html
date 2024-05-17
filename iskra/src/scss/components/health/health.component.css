@@ -1,0 +1,224 @@
+:root {
+  --yellow-color: #ffaf00;
+  --beige-color: #ffe7af;
+  --purple-color: #833a8a;
+  --lavand-color: #facbff;
+  --rose-color: #ff0056;
+  --light-rose-color: #ffcbd2;
+  --pink-color: #ff4281;
+  --black-color: #000;
+  --white-color: #fff;
+  --gray-color: #dedede;
+  --trs-300: 300ms ease;
+  --trs-600: 600ms ease;
+  --trs-800: 800ms ease;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(255, 175, 0, 1) 0%,
+    rgba(246, 24, 103, 1) 49%,
+    rgba(130, 58, 138, 1) 100%
+  );
+  --shadow: 0px 4px 30px 0px rgba(34, 60, 80, 0.25);
+}
+
+.health {
+  position: relative;
+  background: var(--light-rose-color);
+  padding-top: 140px;
+  padding-bottom: 108px;
+  z-index: 9;
+}
+@media (max-width: 1024px) {
+  .health {
+    padding-top: 80px;
+    padding-bottom: 62px;
+    background: #ffd9d0;
+  }
+}
+.health:after {
+  content: "";
+  position: absolute;
+  background: url("../img/shapes/shape-health.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: -55px;
+  width: 100%;
+  height: 60px;
+}
+@media (max-width: 767px) {
+  .health:after {
+    background: url("../img/shapes/shape-health-mob.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.health .health-inner {
+  display: flex;
+  gap: 94px;
+  align-items: flex-end;
+}
+@media (max-width: 1280px) {
+  .health .health-inner {
+    gap: 55px;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 1024px) {
+  .health .health-inner {
+    flex-direction: column;
+    gap: 35px;
+  }
+}
+.health .health-inner .left {
+  width: 36%;
+}
+@media (max-width: 1024px) {
+  .health .health-inner .left {
+    width: 100%;
+  }
+}
+.health .health-inner .left h3 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 66px;
+  margin-bottom: 83px;
+}
+@media (max-width: 1024px) {
+  .health .health-inner .left h3 {
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 40px;
+  }
+}
+.health .health-inner .left > span {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+  display: block;
+  margin-bottom: 50px;
+}
+@media (max-width: 1024px) {
+  .health .health-inner .left > span {
+    display: none;
+  }
+}
+.health .health-inner .left > p {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .health .health-inner .left > p {
+    display: none;
+  }
+}
+.health .health-inner .left .file {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+@media (max-width: 1024px) {
+  .health .health-inner .left .file {
+    display: none;
+  }
+}
+.health .health-inner .left .file svg {
+  stroke: var(--black-color);
+}
+.health .health-inner .left .file p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+@media (max-width: 1024px) {
+  .health .health-inner .left .file p {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 263px;
+  }
+}
+.health .health-inner .left button {
+  width: 300px;
+}
+@media (max-width: 1024px) {
+  .health .health-inner .left button {
+    display: none;
+  }
+}
+.health .health-inner .right {
+  width: 58%;
+}
+@media (max-width: 1024px) {
+  .health .health-inner .right {
+    width: 100%;
+  }
+}
+.health .health-inner .right .file-wrapper {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .health .health-inner .right .file-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 85px;
+  }
+}
+.health .health-inner .right .file-wrapper > span {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 700;
+}
+.health .health-inner .right .file-wrapper > p {
+  font-size: 28px;
+  line-height: 33px;
+}
+.health .health-inner .right .file-wrapper .file {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.health .health-inner .right .file-wrapper .file svg {
+  stroke: var(--black-color);
+}
+@media (max-width: 1024px) {
+  .health .health-inner .right .file-wrapper .file p {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 263px;
+  }
+}
+.health .health-inner .right .image-wrapper {
+  width: 100%;
+  max-height: 434px;
+  height: 30.4vw;
+  border-radius: 15px;
+  overflow: hidden;
+}
+@media (max-width: 1024px) {
+  .health .health-inner .right .image-wrapper {
+    height: 54vw;
+  }
+}
+.health .health-inner .right .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.health .health-inner .right .button-wrapper {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .health .health-inner .right .button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .health .health-inner .right .button-wrapper button {
+    width: 360px;
+  }
+}/*# sourceMappingURL=health.component.css.map */

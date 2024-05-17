@@ -1,0 +1,194 @@
+.catalog__sort {
+  display: flex;
+  position: relative;
+  font-size: 16px;
+  line-height: 21px;
+  color: $black;
+  margin-bottom: 16px;
+
+  @include desktop-big {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @include tablet {
+    margin-bottom: 0;
+    position: absolute;
+    right: 38px;
+    top: 0;
+  }
+
+  @include mobile {
+    right: 20px;
+  }
+}
+
+.catalog__sort-selected {
+  position: relative;
+  margin-left: 24px;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  @include desktop-big {
+    margin-left: 37px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    background: url("../img/triangle-arrow.svg") no-repeat center / contain;
+    right: -12px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &:hover {
+    opacity: .7;
+
+    &:after {
+      opacity: .7;
+    }
+  }
+}
+
+.catalog__sort-options {
+  position: absolute;
+  top: 29px;
+  left: 118px;
+  padding: 8px 0;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: $black;
+  background: $gray_5;
+  visibility: hidden;
+  opacity: 0;
+
+  @include tablet {
+    padding: 0 0 0 34px;
+    position: relative;
+    left: auto;
+    top: auto;
+    background: inherit;
+    letter-spacing: -0.01em;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+  }
+}
+
+.catalog__sort-item {
+  padding: 11px 16px;
+  cursor: pointer;
+  position: relative;
+
+  @include tablet {
+    padding: 0;
+    margin-bottom: 29px;
+  }
+
+  @include mobile {
+    margin-bottom: 21px;
+  }
+
+  &:last-child {
+    margin-bottom: 8px;
+  }
+
+  &:hover, &.selected {
+    color: $green;
+
+    &:after {
+      @include tablet {
+        border: 7px solid $green;
+      }
+    }
+  }
+
+  &:after {
+    display: none;
+    position: absolute;
+    content: '';
+    left: -34px;
+    top: 1px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $gray_3;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    @include tablet {
+      display: block;
+    }
+  }
+}
+
+.catalog__sort_tablet {
+  display: none;
+  align-items: center;
+
+  @include tablet {
+    display: flex;
+  }
+
+  img {
+    @include mobile {
+      width: 20px;
+    }
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-left: 8px;
+
+    @include mobile {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}
+
+.modal__sort {
+  align-items: flex-end;
+  display: none;
+  transition: all .3s ease-in .3s;
+
+  @include tablet {
+    display: flex;
+  }
+
+  .modal__wrap {
+    display: flex;
+    width: 100%;
+    padding: 32px;
+    bottom: -30%;
+    transition: bottom .3s ease-in;
+
+    @include mobile {
+      height: auto!important;
+      padding: 25px 32px 17px;
+    }
+  }
+
+  &.open {
+    .modal__wrap {
+      bottom: 0;
+      transition: bottom .3s ease-in .3s;
+    }
+  }
+}

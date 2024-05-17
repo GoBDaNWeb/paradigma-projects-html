@@ -1,0 +1,61 @@
+.comment-modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.comment-modal.active .comment-modal-content {
+  transform: translateY(0);
+}
+
+.comment-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 110;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--trs-600);
+  pointer-events: none;
+}
+.comment-modal .comment-modal-content {
+  background: var(--white-color);
+  border-radius: 12px;
+  padding: 50px;
+  position: relative;
+  transition: var(--trs-600);
+  max-width: 490px;
+  transform: translateY(-100%);
+}
+.comment-modal .comment-modal-content .close-btn {
+  padding: 0;
+  top: 17px;
+  right: 19px;
+  position: absolute;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 0;
+}
+.comment-modal .comment-modal-content h5 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.comment-modal .comment-modal-content p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.comment-modal .comment-modal-content button {
+  height: 52px;
+  width: 232px;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 24px;
+}/*# sourceMappingURL=comment-modal.component.css.map */
